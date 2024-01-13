@@ -1,0 +1,313 @@
+:root {
+	--Color1: #62b5c0;
+	--Color2: #f5f5f5;
+	--Color3: #f5e8ee;
+	--Color4: #f5e8ee;
+	--Color5: #ffffff;
+	--Color7: hsl(187, 43%, 50%);
+	--Color8: #f1f1f1;
+
+	--bigGap: 5rem; /* 75px / 16px */
+	--largerGap: 2.5rem; /* 50px / 16px */
+	--midGap: 1.25rem; /* 25px / 16px */
+	--smallGap: 0.3125rem; /* 5px / 16px */
+
+	--fs-xl: clamp(3rem, 8vw + 1rem, 8rem);
+	--fs-x: clamp(1rem, 2vw + 0.5rem, 2rem);
+	--fs-600: 2rem;
+	--fs-400: 1rem;
+}
+
+@media (min-width: 40rem) {
+	:root {
+		--fs-600: 3rem;
+		--fs-400: 1.125rem;
+	}
+}
+
+body {
+	margin: 0;
+	background-color: var(--Color1);
+	font-family: 'Inter Variable';
+}
+
+/* ============== HEADER SECTION =================== */
+
+header {
+	/* display stuff */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	/* positioning stuff */
+	position: relative;
+	/* box.model stuff */
+	width: 100%;
+	height: var(--bigGap);
+	background: var(--Color1);
+}
+
+.headerContentsContainer {
+	margin: var(--midGap);
+}
+
+.logoCircle {
+	width: 3rem;
+	height: 3rem;
+	background: var(--Color2);
+	border-radius: 9999px;
+}
+
+.logo {
+	width: 4.6875rem; /* 75px / 16px */
+	height: 4.6875rem; /* 75px / 16px */
+}
+
+.siteName {
+	width: fit-content;
+	font-size: clamp(0.8rem, 6vw, 3rem);
+	font-weight: 700;
+	color: var(--Color2);
+}
+/* =============== DesktopNavigaiton ===================================== */
+
+/* =============== BurgerNavigaiton ===================================== */
+.burgerNavigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: var(--Color7);
+	min-height: calc(100vh - 5rem);
+}
+
+.burgerRow {
+	display: flex;
+	text-decoration: none;
+}
+.burgerHyperlink {
+	margin: 2rem;
+
+	color: var(--Color2);
+	font-size: 1.5rem; /* 24px / 16px */
+	font-weight: 400;
+	text-decoration: none;
+}
+/* :Hover */
+.burgerRow:hover {
+	background-color: white;
+}
+.burgerRow:active {
+	background-color: white;
+}
+.burgerRow:hover .burgerHyperlink {
+	color: var(--Color7) !important;
+	text-decoration: none;
+	background-color: white;
+}
+.burgerRow:active .burgerHyperlink {
+	color: var(--Color7) !important;
+	text-decoration: none;
+	background-color: white;
+}
+/* onSite... */
+.onSiteBurgerRow {
+	display: flex;
+	text-decoration: none;
+}
+.onSiteBurgerHyperlink {
+	margin: 2rem;
+
+	color: var(--Color2);
+	font-size: 1.5rem; /* 24px / 16px */
+	font-weight: 400;
+	text-decoration: none;
+	opacity: 50%;
+}
+/* ============== HERO SECTION =================== */
+
+.heroSection {
+	display: flex;
+	position: relative;
+	background-color: var(--Color2);
+	width: 100%;
+	padding-top: var(--largerGap);
+	padding-bottom: var(--largerGap);
+}
+
+.landingPage {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+	z-index: 3;
+	position: relative;
+	padding-left: 7.5vw;
+	padding-right: 7.5vw;
+}
+
+.MainHeadline {
+	color: var(--Color1);
+	font-weight: 700;
+	font-size: clamp(1rem, 9.5vw, 40rem); /* 10vw / 16px */
+	line-height: 1em;
+}
+
+.MainSubHeadline {
+	color: var(--Color1);
+	font-weight: 400;
+	font-size: clamp(0.5rem, 5vw, 30rem); /* 0.5px, 5vw, 3.25rem */
+	word-wrap: break-word;
+}
+
+/* ============== TEXT SECTION =================== */
+
+.textSection {
+	position: relative;
+	padding-top: var(--largerGap);
+	padding-bottom: var(--largerGap);
+	word-wrap: break-word;
+	background-color: var(--Color5);
+}
+
+.paragraphHeadline {
+	margin-bottom: var(--smallGap);
+	color: black;
+	font-weight: 700;
+	word-wrap: break-word;
+}
+
+.paragraphText {
+	color: black;
+	font-weight: 400;
+	word-wrap: break-word;
+}
+
+.paragraphContainer {
+	position: relative;
+	font-size: clamp(1rem, 3vw, 1.5rem);
+	margin-left: var(--midGap);
+	margin-right: var(--midGap);
+}
+
+/* ============== FOOTER SECTION =================== */
+
+/* ============= SVGS ============== */
+.burgerMenuSvg {
+	stroke: var(--Color2);
+	width: 40px;
+	height: 40px;
+	margin-left: 0;
+}
+.burgerMenuSvg:hover {
+	transform: translateY(-0.125rem); /* 30px / 16px */
+	stroke: var(--Color2);
+	cursor: pointer;
+}
+
+.heroSvgDesktop {
+	display: none;
+
+	position: absolute;
+	top: 50%; /* 150px / 16px */
+	left: 0;
+	width: 80%;
+	transform: translateY(-45%);
+	fill: var(--Color3);
+	stroke: var(--Color5);
+	stroke-width: 0.45%;
+}
+
+.heroSvgMobile {
+	z-index: 1;
+	position: absolute;
+	right: 3%; /* 2px / 16px */
+	top: 5%; /* -3px / 16px */
+	height: 85%;
+	fill: none;
+	stroke: var(--Color5);
+	stroke-width: 0.2%;
+}
+
+.zigZagSvg {
+	display: none;
+	stroke: var(--Color3);
+}
+
+/* =================== BUTTONS ================= */
+
+a {
+	user-select: none;
+}
+
+/* ================= IMAGES ================ */
+
+.AiWoman {
+	width: 100%;
+}
+
+/* ================= MEDIA QUERIES ============== */
+
+@media (min-width: 48rem) and (min-aspect-ratio: 1/1) {
+	/* Media query based on 768px (48rem / 16px) */
+	.heroSvgDesktop {
+		display: block;
+	}
+	.heroSvgMobile {
+		display: none;
+	}
+	.heroSection {
+		min-height: calc(100vh - 5rem - (var(--largerGap) * 2));
+	}
+	.landingPage {
+		padding-right: 10vw;
+		padding-left: 10vw;
+		margin: auto;
+		margin-bottom: 10%;
+	}
+	.MainSubHeadline {
+		max-width: 45%; /* 526px / 16px */
+		font-size: clamp(0.5rem, 3.33vw, 30rem); /* 0.5px, 5vw, 3.25rem */
+	}
+	.registerButton {
+		font-size: clamp(0.5rem, 3.33vw, 30rem);
+	}
+
+	.AiWoman {
+		z-index: 2;
+		position: absolute;
+		right: 10vw;
+		bottom: 0;
+		max-width: calc(50% - 10vw);
+		margin: 0;
+	}
+}
+@media (min-width: 31.25rem) {
+	.paragraphContainer {
+		position: relative;
+		font-size: clamp(1rem, 3vw, 1.5rem);
+		max-width: 55ch;
+		margin-left: 38.2%;
+		margin-right: var(--largerGap);
+	}
+	.zigZagSvg {
+		display: block;
+		position: absolute;
+		right: calc(61.8% + var(--largerGap)); /* 61.8% + var(--largerGap) */
+		top: 0;
+		bottom: 0;
+		height: calc(90% - (2 * var(--midGap)));
+		max-width: 20%;
+		margin: auto 0;
+		fill: none;
+	}
+}
+
+.active {
+	border-bottom: 0.125em solid currentColor;
+	opacity: 20%;
+}
+.activeBurger * {
+	opacity: 20%;
+}
+.hide {
+	display: none !important;
+}
