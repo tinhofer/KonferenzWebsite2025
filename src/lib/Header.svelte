@@ -91,7 +91,7 @@
 	</button>
 
 	<div class="navBar headerContentsContainer" bind:this={navBar}>
-		<a class="hyperLink" href="{base}/">Home</a>
+		<a class="hyperLink" href="{base}/">Home{base}</a>
 		<a class="hyperLink" href="{base}/programm">Programm</a>
 		<a class="hyperLink" href="{base}/sprecher">Sprecher</a>
 		<a class="hyperLink" href="{base}/sponsoren">Sponsoren</a>
@@ -99,19 +99,19 @@
 	</div>
 </header>
 <div class="burgerNavigation unselectable-text hide" bind:this={burgerMenu}>
-	<a class="burgerRow" href="{base}/" on:click={toggleBurgerBool}
+	<a class="burgerRow" href="/" on:click={toggleBurgerBool}
 		><span class="burgerHyperlink">Home</span></a
 	>
-	<a class="burgerRow" href="{base}/programm" on:click={toggleBurgerBool}
+	<a class="burgerRow" href="/programm" on:click={toggleBurgerBool}
 		><span class="burgerHyperlink">Programm</span></a
 	>
-	<a class="burgerRow" href="{base}/sprecher" on:click={toggleBurgerBool}
+	<a class="burgerRow" href="/sprecher" on:click={toggleBurgerBool}
 		><span class="burgerHyperlink">Sprecher</span></a
 	>
-	<a class="burgerRow" href="{base}/sponsoren" on:click={toggleBurgerBool}
+	<a class="burgerRow" href="/sponsoren" on:click={toggleBurgerBool}
 		><span class="burgerHyperlink">Sponsoren</span></a
 	>
-	<a class="burgerRow" href="{base}/anmeldung" on:click={toggleBurgerBool}
+	<a class="burgerRow" href="/anmeldung" on:click={toggleBurgerBool}
 		><span class="burgerHyperlink">Anmeldung</span></a
 	>
 </div>
