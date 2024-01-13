@@ -154,7 +154,7 @@
 				/>
 			</picture>
 		</div>
-		<div class="sprecherContainer" id="Reichel">
+		<div class="sprecherContainer" id="Warter">
 			<picture>
 				<source srcset={WarterAvif} type="image/avif" />
 				<source srcset={WarterWebp} type="image/webp" />
