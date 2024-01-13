@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
     import AnmeldungsTutorial from "$lib/images/anleintung.svg";
 	import InternalLink from '$lib/InternalLink.svelte';
 	import ExternalLink from '$lib/ExternalLink.svelte';
@@ -34,9 +35,9 @@
 			<h1>Informationen</h1>
 			<ul>
 				<li>Veranstaltungszeit: <span>29.02.2024</span> | 09:00 - 17:00</li>
-				<li>Ablauf: siehe <a class="link" href="/programm">Programm<InternalLink /></a></li>
+				<li>Ablauf: siehe <a class="link" href="{base}/programm">Programm<InternalLink /></a></li>
 				<li>Veranstaltungsort: Campus WU, Gebäude: LC - Learning Center, Etage: OG 2, Raum: LC.2.400 Clubraum siehe <a class="link" href="https://campus.wu.ac.at/?q=LC.2.400" target="_blank">TU Gebäudeplan<ExternalLink /></a></li>
-				<li>Vortragende: siehe <a class="link" href="/sprecher">Sprecher<InternalLink /></a></li>
+				<li>Vortragende: siehe <a class="link" href="{base}/sprecher">Sprecher<InternalLink /></a></li>
 				<li>Kontakt: <a class="link" href="mailto:arbeitsrecht.sozialrecht@wu.ac.at" target="_blank">arbeitsrecht.sozialrecht@wu.ac.at</a></li>
 			</ul>
 		</div>

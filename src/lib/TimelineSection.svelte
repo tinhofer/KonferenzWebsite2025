@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	import InternalLink from '$lib/InternalLink.svelte';
 	import ExternalLink from '$lib/ExternalLink.svelte';
 </script>
@@ -14,7 +15,7 @@
 				<div class="eventTextContainer">
 					<div class="eventHeading">Begrüßung und Eröffnung</div>
 					<div class="eventSubtext">
-						<a href="/sprecher#Auer-Mayer">Susanne Auer-Mayer<InternalLink /></a>und <a href="/sprecher#Tinhofer">Andreas Tinhofer<InternalLink /></a>
+						<a href="{base}/sprecher#Auer-Mayer">Susanne Auer-Mayer<InternalLink /></a>und <a href="/sprecher#Tinhofer">Andreas Tinhofer<InternalLink /></a>
 					</div>
 				</div>
 			</div>
@@ -27,7 +28,7 @@
 					<div class="eventHeading">
 						Einführung in die technischen Grundlagen aktueller KI-Systeme
 					</div>
-					<div class="eventSubtext"><a href="/sprecher#Heitzinger">Clemens Heitzinger<InternalLink /></a></div>
+					<div class="eventSubtext"><a href="{base}/sprecher#Heitzinger">Clemens Heitzinger<InternalLink /></a></div>
 				</div>
 			</div>
 			<div class="eventContainer">
@@ -39,7 +40,7 @@
 					<div class="eventHeading">
 						Einführung in die technischen Grundlagen aktueller KI-Systeme
 					</div>
-					<div class="eventSubtext"><a href="/sprecher#Reichel">Astrid Reichel<InternalLink /></a></div>
+					<div class="eventSubtext"><a href="{base}/sprecher#Reichel">Astrid Reichel<InternalLink /></a></div>
 				</div>
 			</div>
 			<div class="eventContainer">
@@ -59,7 +60,7 @@
 				</svg>
 				<div class="eventTextContainer">
 					<div class="eventHeading">Was bedeutet der AI Act für die Praxis?</div>
-					<div class="eventSubtext"><a href="/sprecher#Eisenberger">Iris Eisenberger<InternalLink /></a></div>
+					<div class="eventSubtext"><a href="{base}/sprecher#Eisenberger">Iris Eisenberger<InternalLink /></a></div>
 				</div>
 			</div>
 			<div class="eventContainer">
@@ -69,7 +70,7 @@
 				</svg>
 				<div class="eventTextContainer">
 					<div class="eventHeading">Datenschutzrechtliche Fragen des KI-Einsatzes</div>
-					<div class="eventSubtext"><a href="/sprecher#Warter">Johannes Warter<InternalLink /></a></div>
+					<div class="eventSubtext"><a href="{base}/sprecher#Warter">Johannes Warter<InternalLink /></a></div>
 				</div>
 			</div>
 			<div class="eventContainer">
@@ -89,7 +90,7 @@
 				</svg>
 				<div class="eventTextContainer">
 					<div class="eventHeading">Algorithmische Diskriminierung</div>
-					<div class="eventSubtext"><a href="/sprecher#Tinhofer">Andreas Tinhofer<InternalLink /></a></div>
+					<div class="eventSubtext"><a href="{base}/sprecher#Tinhofer">Andreas Tinhofer<InternalLink /></a></div>
 				</div>
 			</div>
 			<div class="eventContainer">
@@ -101,7 +102,7 @@
 					<div class="eventHeading">
 						Mitwirkung der Belegschaft bei der Einführung von KI-Systemen
 					</div>
-					<div class="eventSubtext"><a href="/sprecher#Greiner">Conrad Greiner<InternalLink /></a></div>
+					<div class="eventSubtext"><a href="{base}/sprecher#Greiner">Conrad Greiner<InternalLink /></a></div>
 				</div>
 			</div>
 			<div class="eventContainer">
