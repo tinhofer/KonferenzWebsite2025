@@ -1,7 +1,6 @@
 <script>
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
-	import { base } from '$app/paths';
 	import logoPng from '$lib/images/Logo.svg';
 	export var isBurgerActivated = false;
 	/**@type {HTMLDivElement}*/
@@ -91,11 +90,11 @@
 	</button>
 
 	<div class="navBar headerContentsContainer" bind:this={navBar}>
-		<a class="hyperLink" href="{base}/">Home{base}</a>
-		<a class="hyperLink" href="{base}/programm">Programm</a>
-		<a class="hyperLink" href="{base}/sprecher">Sprecher</a>
-		<a class="hyperLink" href="{base}/sponsoren">Sponsoren</a>
-		<a class="hyperLink" href="{base}/anmeldung">Anmeldung</a>
+		<a class="hyperLink" href="/">Home</a>
+		<a class="hyperLink" href="/programm">Programm</a>
+		<a class="hyperLink" href="/sprecher">Sprecher</a>
+		<a class="hyperLink" href="/sponsoren">Sponsoren</a>
+		<a class="hyperLink" href="/anmeldung">Anmeldung</a>
 	</div>
 </header>
 <div class="burgerNavigation unselectable-text hide" bind:this={burgerMenu}>
