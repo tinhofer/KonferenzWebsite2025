@@ -6,10 +6,10 @@
 <section class="heroSection">
 	<div class="landingPage">
 		<picture class="AiWoman">
-			<source srcset={base + AiWomanAvif} type="image/avif" />
-			<source srcset={base + AiWomanWebp} type="image/webp" />
+			<source srcset={AiWomanAvif} type="image/avif" />
+			<source srcset={AiWomanWebp} type="image/webp" />
 			<img
-				src={base + AiWomanPng}
+				src={AiWomanPng}
 				alt="Portrait von AuerMayerAvif"
 				loading="lazy"
 				decoding="async"
