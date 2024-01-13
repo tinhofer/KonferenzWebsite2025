@@ -58,7 +58,7 @@
 </script>
 
 <header>
-	<img src={logoPng} alt="Das Logo des Anwaltes Dr. Andreas Tinhofer und der Wirtschaftsuniversität Wien" class="headerContentsContainer">
+	<img src={base + logoPng} alt="Das Logo des Anwaltes Dr. Andreas Tinhofer und der Wirtschaftsuniversität Wien" class="headerContentsContainer">
 	<button on:click={toggleBurgerBool} class="headerButton" bind:this={openButton}>
 		<svg id="burgerMenuEnter" class="burgerMenuSvg" viewBox="0 0 10 8">
 			<path d="M1 1h8M1 4h 8M1 7h8" stroke-width="1.5" stroke-linecap="round" />
