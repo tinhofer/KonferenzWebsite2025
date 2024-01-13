@@ -1,5 +1,4 @@
 <script>
-	import { base } from '$app/paths';
 	import AiWomanAvif from "$lib/images/AiWoman.avif";
 	import AiWomanWebp from "$lib/images/AiWoman.webp";
 	import AiWomanPng from "$lib/images/AiWoman.png";
@@ -21,7 +20,7 @@
 		<div class="MainSubHeadline">
 			Chancen und Risiken des Einsatzes Künstlicher Intelligenz im Betrieb
 		</div>
-		<a class="registerButton" href="{base}/anmeldung">Anmelden</a>
+		<a class="registerButton" href="/anmeldung">Anmelden</a>
 	</div>
 	<svg class="heroSvgMobile" viewBox="0 0 755 848" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path

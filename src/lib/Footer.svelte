@@ -1,9 +1,6 @@
-<script>
-	import { base } from '$app/paths';
-</script>
 <footer>
-	<a href="{base}/impressum">Impressum</a>
-	<a href="{base}/datenschutzerklärung">Datenschutzerklärung</a>
+	<a href="/impressum">Impressum</a>
+	<a href="/datenschutzerklärung">Datenschutzerklärung</a>
 	<span>Heumarkt 7/7/93 | A-1010 Wien</span>
 </footer>
 <style>
