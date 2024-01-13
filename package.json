@@ -13,7 +13,7 @@
 		"format": "prettier --write .",
 		"test:integration": "playwright test",
 		"test:unit": "vitest",
-		"deploy": "pnpm build && pnpx gh-pages -d build -t true"
+		"deploy": "pnpm build && npx gh-pages -d build -t true"
 	},
 	"devDependencies": {
 		"@fontsource-variable/inter": "^5.0.16",
