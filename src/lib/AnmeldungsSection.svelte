@@ -4,9 +4,9 @@
 	import ExternalLink from '$lib/ExternalLink.svelte';
 
 
-    const email = "tinhofer.simon@gmail.com";
-    const subject = "Anmeldung für die Konferenz: Automatisierung der Arbeit";
-    const body = "Mit dieser automatisch generierten E-mail melde ich mich zu Ihrer Konferenz an."
+    const email = "arbeitsrecht.sozialrecht@wu.ac.at";
+    const subject = "Anmeldung zur Tagung „Automatisierung der Arbeit“ an der WU am 29.02.2024";
+    const body = "Hiermit melde ich mich zur o.g. kostenlosen Tagung am 29.02.2024 an. Ich nehme zur Kenntnis, dass die Teilnehmerzahl aus Platzgründen begrenzt ist. Sollte ich an der Teilnahme verhindert sein, so werde ich mich per E-Mail abmelden, um anderen Interessenten die Teilnahme zu ermöglichen.%0D%0A%0D%0AName: %0D%0A%0D%0AFirma/Organisation: %0D%0A%0D%0A Hinweis: Wir weisen darauf hin, dass bei der Veranstaltung fotografiert wird und diese Fotos für Veranstaltungsberichte im Internet oder in anderen Medien verwendet werden könnten. Sollten Sie damit nicht einverstanden sein, so teilen Sie dies bitte den Organisatoren vor Ort mit."
     const mailToLink = 'mailto:' + email + '?subject=' + subject + '&body=' + body;
 
     function openMail () {
@@ -33,21 +33,19 @@
 		<div class="textContainer info">
 			<h1>Informationen</h1>
 			<ul>
-				<li>Veranstaltungszeit: <span>29.02.2024</span> | 09:00 - 17:00</li>
-				<li>Ablauf: siehe <a class="link" href="/programm">Programm<InternalLink /></a></li>
-				<li>Veranstaltungsort: Campus WU, Gebäude: LC - Learning Center, Etage: OG 2, Raum: LC.2.400 Clubraum siehe <a class="link" href="https://campus.wu.ac.at/?q=LC.2.400" target="_blank">TU Gebäudeplan<ExternalLink /></a></li>
-				<li>Vortragende: siehe <a class="link" href="/sprecher">Sprecher<InternalLink /></a></li>
-				<li>Kontakt: <a class="link" href="mailto:arbeitsrecht.sozialrecht@wu.ac.at" target="_blank">arbeitsrecht.sozialrecht@wu.ac.at</a></li>
+				<li>Datum: 29.02.2024 | 09:00 - 17:00 Uhr</li>
+				<li>Ort: Campus WU, LC - Learning Center, OG 2, LC.2.400 Clubraum <br/> <a class="link" href="https://campus.wu.ac.at/?q=LC.2.400" target="_blank">WU Gebäudeplan<ExternalLink /></a></li>
+				<li>Kontakt: Institut für Arbeits- und Sozialrecht, WU Wien <br/>T: 01 313 36 – 4637 <br/>E: <a class="link" href="mailto:arbeitsrecht.sozialrecht@wu.ac.at" target="_blank">arbeitsrecht.sozialrecht@wu.ac.at</a></li>
 			</ul>
+			<a class="button" role="button" href={mailToLink} target="_blank">Anmelden</a>
 		</div>
 	</div>
-	<div class="anmeldungsContainer anmeldung">
+	<!-- <div class="anmeldungsContainer anmeldung">
 		<div class="textContainer">
 			<h1>Hier Anmelden!</h1>
 			<p>
 				Um sich für die Konferenz anzumelden, ist es lediglich nötig eine E-mail an konferenzmail@gmail.com zu senden. Der Sender der E-Mail wird in Folge auf die Warteliste gesetzt und Informiert wenn ein Platz frei wird.
 			</p>
-			<a class="button" role="button" href={mailToLink} target="_blank">E-Mail senden</a>
 		</div>
 		<picture class="graphContainer">
 			<img
@@ -58,7 +56,7 @@
 				width="1000px"
 			/>
 		</picture>
-	</div>
+	</div> -->
 </div>
 
 <style>
@@ -76,6 +74,7 @@
 		background-size: 5em 0.15em;
 	}
 	.button {
+		margin-left: 0.8rem;
 		width: max-content;
 		padding: 0.2em 0.4em; /* 1px 19px / 16px */
 
@@ -87,7 +86,7 @@
 
 		color: var(--Color2);
 		font-weight: 600;
-		font-size: clamp(1.5rem, 2vw, 3rem);
+		font-size: /* clamp(1.5rem, 3vw, 3rem) */ var(--fs-600);
 		text-decoration: none;
 	}
 	.button:hover {
@@ -99,12 +98,13 @@
 		display: flex;
         flex-direction: colum;
         flex-wrap: wrap;
-        gap: 1rem;
 	}
 	.anmeldungsContainer {
 		background-color: white;
 		display: flex;
 		width: 100%;
+		z-index: 2;
+		margin-bottom: 1rem;
 	}
 	.anmeldung{
 		justify-content: space-between;
@@ -161,6 +161,7 @@
 	}
 	ul{
 		margin: 0;
+		padding-left: 2rem;
 	}
 	span {
 		font-weight: 700;
@@ -168,7 +169,6 @@
 	@media (max-width: 750px){
 		.anmeldungsContainer{
 			flex-direction: column;
-			margin-bottom: 3rem;
 		}
 		.textContainer{
 			width: calc(100% - 2rem);

@@ -15,12 +15,14 @@
 	--fs-xl: clamp(3rem, 8vw + 1rem, 8rem);
 	--fs-x: clamp(1rem, 2vw + 0.5rem, 2rem);
 	--fs-600: 2rem;
+	--fs-500: 1.5rem;
 	--fs-400: 1rem;
 }
 
 @media (min-width: 40rem) {
 	:root {
 		--fs-600: 3rem;
+		--fs-500: 1.625rem;
 		--fs-400: 1.125rem;
 	}
 }
@@ -32,24 +34,6 @@ body {
 }
 
 /* ============== HEADER SECTION =================== */
-
-header {
-	/* display stuff */
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	/* positioning stuff */
-	position: relative;
-	/* box.model stuff */
-	width: 100%;
-	height: var(--bigGap);
-	background: var(--Color1);
-}
-
-.headerContentsContainer {
-	margin: var(--midGap);
-}
 
 .logoCircle {
 	width: 3rem;
@@ -144,49 +128,7 @@ header {
 	padding-right: 7.5vw;
 }
 
-.MainHeadline {
-	color: var(--Color1);
-	font-weight: 700;
-	font-size: clamp(1rem, 9.5vw, 40rem); /* 10vw / 16px */
-	line-height: 1em;
-}
-
-.MainSubHeadline {
-	color: var(--Color1);
-	font-weight: 400;
-	font-size: clamp(0.5rem, 5vw, 30rem); /* 0.5px, 5vw, 3.25rem */
-	word-wrap: break-word;
-}
-
 /* ============== TEXT SECTION =================== */
-
-.textSection {
-	position: relative;
-	padding-top: var(--largerGap);
-	padding-bottom: var(--largerGap);
-	word-wrap: break-word;
-	background-color: var(--Color5);
-}
-
-.paragraphHeadline {
-	margin-bottom: var(--smallGap);
-	color: black;
-	font-weight: 700;
-	word-wrap: break-word;
-}
-
-.paragraphText {
-	color: black;
-	font-weight: 400;
-	word-wrap: break-word;
-}
-
-.paragraphContainer {
-	position: relative;
-	font-size: clamp(1rem, 3vw, 1.5rem);
-	margin-left: var(--midGap);
-	margin-right: var(--midGap);
-}
 
 /* ============== FOOTER SECTION =================== */
 
@@ -263,10 +205,6 @@ a {
 		margin: auto;
 		margin-bottom: 10%;
 	}
-	.MainSubHeadline {
-		max-width: 45%; /* 526px / 16px */
-		font-size: clamp(0.5rem, 3.33vw, 30rem); /* 0.5px, 5vw, 3.25rem */
-	}
 	.registerButton {
 		font-size: clamp(0.5rem, 3.33vw, 30rem);
 	}
@@ -280,27 +218,6 @@ a {
 		margin: 0;
 	}
 }
-@media (min-width: 31.25rem) {
-	.paragraphContainer {
-		position: relative;
-		font-size: clamp(1rem, 3vw, 1.5rem);
-		max-width: 55ch;
-		margin-left: 38.2%;
-		margin-right: var(--largerGap);
-	}
-	.zigZagSvg {
-		display: block;
-		position: absolute;
-		right: calc(61.8% + var(--largerGap)); /* 61.8% + var(--largerGap) */
-		top: 0;
-		bottom: 0;
-		height: calc(90% - (2 * var(--midGap)));
-		max-width: 20%;
-		margin: auto 0;
-		fill: none;
-	}
-}
-
 .active {
 	border-bottom: 0.125em solid currentColor;
 	opacity: 20%;

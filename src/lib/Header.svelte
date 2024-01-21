@@ -57,7 +57,7 @@
 </script>
 
 <header>
-	<img src={logoPng} alt="Das Logo des Anwaltes Dr. Andreas Tinhofer und der Wirtschaftsuniversität Wien" class="headerContentsContainer">
+	<a href="/" class="logoContainer"><img src={logoPng} alt="Das Logo des Anwaltes Dr. Andreas Tinhofer und der Wirtschaftsuniversität Wien"></a>
 	<button on:click={toggleBurgerBool} class="headerButton" bind:this={openButton}>
 		<svg id="burgerMenuEnter" class="burgerMenuSvg" viewBox="0 0 10 8">
 			<path d="M1 1h8M1 4h 8M1 7h8" stroke-width="1.5" stroke-linecap="round" />
@@ -92,8 +92,8 @@
 	<div class="navBar headerContentsContainer" bind:this={navBar}>
 		<a class="hyperLink" href="/">Home</a>
 		<a class="hyperLink" href="/programm">Programm</a>
-		<a class="hyperLink" href="/sprecher">Sprecher</a>
-		<a class="hyperLink" href="/sponsoren">Sponsoren</a>
+		<a class="hyperLink" href="/speaker">Speaker</a>
+		<a class="hyperLink" href="/sponsoring">Sponsoring</a>
 		<a class="hyperLink" href="/anmeldung">Anmeldung</a>
 	</div>
 </header>
@@ -104,11 +104,11 @@
 	<a class="burgerRow" href="/programm" on:click={toggleBurgerBool}
 		><span class="burgerHyperlink">Programm</span></a
 	>
-	<a class="burgerRow" href="/sprecher" on:click={toggleBurgerBool}
-		><span class="burgerHyperlink">Sprecher</span></a
+	<a class="burgerRow" href="/speaker" on:click={toggleBurgerBool}
+		><span class="burgerHyperlink">Speaker</span></a
 	>
-	<a class="burgerRow" href="/sponsoren" on:click={toggleBurgerBool}
-		><span class="burgerHyperlink">Sponsoren</span></a
+	<a class="burgerRow" href="/sponsoring" on:click={toggleBurgerBool}
+		><span class="burgerHyperlink">Sponsoring</span></a
 	>
 	<a class="burgerRow" href="/anmeldung" on:click={toggleBurgerBool}
 		><span class="burgerHyperlink">Anmeldung</span></a
@@ -116,6 +116,19 @@
 </div>
 
 <style>
+	header{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		/* positioning stuff */
+		position: relative;
+		/* box.model stuff */
+		width: 100%;
+		height: var(--bigGap);
+		background: var(--Color1);
+		z-index: 3;
+	}
 	button {
 		border: none;
 		background: none;
@@ -149,16 +162,24 @@
 		.navBar {
 			display: inline-flex;
 		}
-
 		.burgerMenuSvg {
 			display: none;
 		}
 	}
 	img {
-		max-width: min(18rem, 65%);
-		margin: 1rem;
+		width: 100%;
 	}
 	.headerButton {
 		margin-right: 1rem;
+	}
+	.headerContentsContainer {
+		margin: var(--midGap);
+	}
+	.logoContainer {
+		max-width: min(18rem, 65%);
+		margin: 1rem;
+	}
+	.logoContainer:hover {
+		transform: translateY(-0.125rem);
 	}
 </style>

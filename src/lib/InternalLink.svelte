@@ -15,8 +15,9 @@
 
 <style>
 	svg {
-		height: 0.75em;
-		margin-left: 0.25em;
-		fill: var(--Color1);
-	}
+			height: 0.75em;
+			margin-left: 0.2em;
+			margin-right: 0.05em;
+			fill: var(--Color1);
+		}
 </style>

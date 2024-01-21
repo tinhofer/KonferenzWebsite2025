@@ -13,13 +13,14 @@
 				alt="Portrait von AuerMayerAvif"
 				loading="lazy"
 				decoding="async"
-				width="1000px"
+				width="1764"
+				height="1549"
 			/>
 		</picture>
-		<div class="MainHeadline">Automatisierung der Arbeit</div>
-		<div class="MainSubHeadline">
+		<h1 class="MainHeadline">Automatisierung der Arbeit</h1>
+		<h2 class="MainSubHeadline">
 			Chancen und Risiken des Einsatzes Künstlicher Intelligenz im Betrieb
-		</div>
+		</h2>
 		<a class="registerButton" href="/anmeldung">Anmelden</a>
 	</div>
 	<svg class="heroSvgMobile" viewBox="0 0 755 848" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,10 +46,8 @@
 </section>
 <style>
 	img {
-		width: 100%; /* Set the desired width for the image */ /* Set the desired height for the image */
-		object-fit: cover; /* Scale the image while maintaining aspect ratio to cover the container */
-		display: block; /* Ensure the image is a block-level element */
-		/* Add any other custom styles you want */
+		max-width: 100%;
+		height: auto;
 	}
 	.registerButton {
 	width: max-content;
@@ -68,5 +67,26 @@
 	.registerButton:hover {
 		transform: translateY(-2%);
 		cursor: pointer;
+	}
+	.MainHeadline {
+		color: var(--Color1);
+		font-weight: 700;
+		font-size: clamp(1rem, 9.5vw, 40rem); /* 10vw / 16px */
+		line-height: 1em;
+		margin: 0;
+	}
+
+	.MainSubHeadline {
+		color: var(--Color1);
+		font-weight: 400;
+		font-size: clamp(0.5rem, 5vw, 30rem); /* 0.5px, 5vw, 3.25rem */
+		word-wrap: break-word;
+		margin: 0;
+	}
+	@media(min-width:48rem){
+		.MainSubHeadline {
+		max-width: 45%; /* 526px / 16px */
+		font-size: clamp(0.5rem, 3.33vw, 30rem); /* 0.5px, 5vw, 3.25rem */
+	}
 	}
 </style>

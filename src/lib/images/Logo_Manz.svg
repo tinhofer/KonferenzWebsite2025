@@ -1,14 +1,24 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 392 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
-    <path d="M120.2,53.7L132.3,27.1L144,53.7L120.2,53.7ZM132.4,9.9L99.9,79.4L108.5,79.4L117,60.6L147.1,60.6L155.4,79.4L164.1,79.4L132.4,9.9Z" style="fill:rgb(174,22,18);fill-rule:nonzero;"/>
-    <g>
-        <path d="M309.6,31.8C320.2,32.1 329.1,24.3 329.5,14.3C329.5,13.9 329.5,13.5 329.5,13.1L343.9,13.1C344.2,30.6 329.3,45.1 310.7,45.3C310.3,45.3 310,45.3 309.6,45.3L309.6,31.8Z" style="fill:rgb(174,22,18);fill-rule:nonzero;"/>
-        <path d="M309.6,49C330.4,49.2 347.5,33.5 347.8,13.9C347.8,13.6 347.8,13.3 347.8,13.1L362.1,13.1C362.1,40.9 339.6,62.5 309.6,62.5L309.6,49Z" style="fill:rgb(174,22,18);fill-rule:nonzero;"/>
-        <path d="M309.6,66.1C340.7,66.1 366,45.2 366,13L380.1,13C380.1,51.4 351.9,79.4 309.6,79.4L309.6,66.1Z" style="fill:rgb(174,22,18);fill-rule:nonzero;"/>
-        <path d="M325.5,13.1L318.2,13.1C313.4,13.1 309.5,16.8 309.5,21.3L309.5,28.2C318,28.5 325.1,22.3 325.4,14.3C325.5,13.9 325.5,13.5 325.5,13.1" style="fill:rgb(174,22,18);fill-rule:nonzero;"/>
-    </g>
-    <path d="M276.3,19.9L237.9,79.4L288.4,79.4L288.4,72.6L250.9,72.6L289.4,13.1L242.8,13.1L242.8,19.9" style="fill:rgb(174,22,18);fill-rule:nonzero;"/>
-    <path d="M169.4,79.4L177.2,79.4L177.2,28.3L232.2,82.4L232.2,13.1L224.3,13.1L224.3,64.5L169.4,10.2L169.4,79.4Z" style="fill:rgb(174,22,18);fill-rule:nonzero;"/>
-    <path d="M81.1,9.3L55.4,65L29.8,9.3L15.5,79.4L23.5,79.4L32.6,34.5L32.8,34.5L55.4,82.2L78.1,34.5L78.3,34.5L87.3,79.4L95.4,79.4L81.1,9.3Z" style="fill:rgb(174,22,18);fill-rule:nonzero;"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 28.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns:serif="http://www.serif.com/"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 4000 1000"
+	 style="enable-background:new 0 0 4000 1000;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#AE1612;}
+</style>
+<path class="st0" d="M1176.6,583.3L1305,301l124.2,282.3H1176.6z M1306,118.5L961.1,856h91.3l90.2-199.5H1462l88.1,199.5h92.3
+	L1306,118.5z"/>
+<g>
+	<path class="st0" d="M3186.4,350.9c112.5,3.2,206.9-79.6,211.2-185.7c0-4.2,0-8.5,0-12.7h152.8c3.2,185.7-154.9,339.6-352.3,341.7
+		c-4.2,0-7.4,0-11.7,0V350.9z"/>
+	<path class="st0" d="M3186.4,533.4c220.7,2.1,402.2-164.5,405.4-372.5c0-3.2,0-6.4,0-8.5h151.7c0,295-238.8,524.2-557.1,524.2
+		V533.4z"/>
+	<path class="st0" d="M3186.4,714.9c330,0,598.5-221.8,598.5-563.5h149.6c0,407.5-299.2,704.6-748.1,704.6V714.9z"/>
+	<path class="st0" d="M3355.1,152.5h-77.5c-50.9,0-92.3,39.3-92.3,87v73.2c90.2,3.2,165.5-62.6,168.7-147.5
+		C3355.1,161,3355.1,156.7,3355.1,152.5"/>
+</g>
+<path class="st0" d="M2833,224.6L2425.5,856h535.9v-72.2h-397.9L2972,152.5h-494.5v72.2"/>
+<path class="st0" d="M1698.6,856h82.8V313.8L2365,887.8V152.5h-83.8v545.4l-582.6-576.2V856z"/>
+<path class="st0" d="M761.6,112.2L488.9,703.2L217.3,112.2L65.5,856h84.9L247,379.6h2.1l239.8,506.2l240.9-506.2h2.1L827.4,856h86
+	L761.6,112.2z"/>
 </svg>

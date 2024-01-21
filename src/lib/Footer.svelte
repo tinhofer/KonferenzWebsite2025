@@ -1,7 +1,7 @@
 <footer>
-	<a href="/impressum">Impressum</a>
-	<a href="/datenschutzerklärung">Datenschutzerklärung</a>
-	<span>Heumarkt 7/7/93 | A-1010 Wien</span>
+	<a class="item" href="/impressum">Impressum</a>
+	<a class="item" href="/datenschutzerklärung">Datenschutzerklärung</a>
+	<a href="https://github.com/SimonTinhofer">Webdesign by Simon Tinhofer</a>
 </footer>
 <style>
 	footer {
@@ -11,10 +11,11 @@
 		justify-content: space-evenly;
 		position: relative;
 		width: calc(100% - 2rem);
-		min-height: 6.25rem; /* 100px / 16px */
+		min-height: var(--bigGap); /* 100px / 16px */
 		background: var(--Color1);
 		color: #f5f5f5;
 		font-size: var(--fs-400);
+		z-index: 3;
 	}
 	@media (max-width: 40rem) {
 		footer{
@@ -25,12 +26,10 @@
 	}
 	a {
 		padding: 0.5rem;
-		color: var(--Color2);
-	}
-	span{
-		padding: 0.5rem;
+		color: var(--Color2);		
 	}
 	a:hover {
 		text-decoration: underline;
+		transform: translateY(-0.07em);
 	}
 </style>
