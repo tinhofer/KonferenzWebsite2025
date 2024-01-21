@@ -15,4 +15,4 @@ jobs:
           server: ftp.e150555-ftp.services.easyname.eu  # Your FTP server
           username: ${{ secrets.FTP_USERNAME }}  # Set in your repo secrets
           password: ${{ secrets.FTP_PASSWORD }}  # Set in your repo secrets
-          server-dir: /html/webroot/konferenz_website  # The target directory on your FTP server
+          server-dir: /html/webroot/konferenz_website/  # The target directory on your FTP server
