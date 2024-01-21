@@ -6,13 +6,13 @@ on:
   workflow_dispatch:
 jobs:
   ftp-deploy:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action@4.0.0
-      with:
-        ftp-server: ftp://e150555-ftp.services.easyname.eu  # Replace with your FTP server
-        ftp-username: ${{ secrets.FTP_USERNAME }}  # Set in your repo secrets
-        ftp-password: ${{ secrets.FTP_PASSWORD }}  # Set in your repo secrets
-        local-dir: ./html/webroot/konferenz_website  # The local directory (or build directory if you have a build step)
+      runs-on: ubuntu-latest
+      steps:
+      - uses: actions/checkout@v2
+      - name: FTP-Deploy-Action
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ftp://e150555-ftp.services.easyname.eu  # Your FTP server
+          username: ${{ secrets.FTP_USERNAME }}  # Set in your repo secrets
+          password: ${{ secrets.FTP_PASSWORD }}  # Set in your repo secrets
+          local-dir: ./html/webroot/konferenz_website  # The local directory
