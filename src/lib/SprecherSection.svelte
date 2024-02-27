@@ -237,7 +237,7 @@
 			<div class="textContainer">
 				<h1>Univ.-Prof. Dr. Astrid Reichel</h1>
 				<p>
-					ist Geschäftsführer der Plattform Industrie 4.0 Österreich und beschäftigt sich mit vielen Themen rund um die Digitalisierung (in) der Produktion. Zudem ist er Lektor an mehreren Fachhochschulen.
+					ist Universitätsprofessorin und stv. Leiterin des Fachbereichs Betriebswirtschaftslehre sowie Leiterin des Teams Human Ressource Management an der Paris Lodron Universität Salzburg. 
 				</p>
 			</div>
 			<picture>
@@ -259,14 +259,14 @@
 				<source srcset={RitzbergerMoserWebp} type="image/webp" /> 
 				<img
 					src={RitzbergerMoserJpg}
-					alt="Portrait von SC Dr Anna Ritzberger-Moser"
+					alt="Portrait von SC Dr. Anna Ritzberger-Moser"
 					loading="lazy"
 					decoding="async"
 					width="1000px"
 				/>
 			</picture>
 			<div class="textContainer">
-				<h1>SC<sup>in</sup> Dr<sup>in</sup> Anna Ritzberger-Moser</h1>
+				<h1>SC Dr Anna Ritzberger-Moser</h1>
 				<p>
 					leitet die Sektion Arbeitsrecht und Zentral-Arbeitsinspektorat im Bundesministerium für Arbeit und Wirtschaft, die für die Legistik im Bereich Arbeitsrecht zuständig ist.
 				</p>

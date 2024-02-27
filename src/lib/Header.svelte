@@ -58,13 +58,13 @@
 
 <header>
 	<a href="/" class="logoContainer"><img src={logoPng} alt="Das Logo des Anwaltes Dr. Andreas Tinhofer und der Wirtschaftsuniversität Wien"></a>
-	<button on:click={toggleBurgerBool} class="headerButton" bind:this={openButton}>
+	<button on:click={toggleBurgerBool} name="Burger-Menü öffnen" class="headerButton" bind:this={openButton}>
 		<svg id="burgerMenuEnter" class="burgerMenuSvg" viewBox="0 0 10 8">
 			<path d="M1 1h8M1 4h 8M1 7h8" stroke-width="1.5" stroke-linecap="round" />
 		</svg>
 	</button>
 
-	<button on:click={toggleBurgerBool} class=" headerButton hide" bind:this={closeButton}>
+	<button on:click={toggleBurgerBool} name="Burger-Menü öffnen" class=" headerButton hide" bind:this={closeButton}>
 		<svg
 			class="burgerMenuSvg"
 			width="40"
@@ -94,7 +94,8 @@
 		<a class="hyperLink" href="/programm">Programm</a>
 		<a class="hyperLink" href="/speaker">Speaker</a>
 		<a class="hyperLink" href="/sponsoring">Sponsoring</a>
-		<a class="hyperLink" href="/anmeldung">Anmeldung</a>
+		<!-- <a class="hyperLink" href="/anmeldung">Anmeldung</a> -->
+		<a class="hyperLink" href="/unterlagen">Unterlagen</a>
 	</div>
 </header>
 <div class="burgerNavigation unselectable-text hide" bind:this={burgerMenu}>
@@ -110,8 +111,11 @@
 	<a class="burgerRow" href="/sponsoring" on:click={toggleBurgerBool}
 		><span class="burgerHyperlink">Sponsoring</span></a
 	>
-	<a class="burgerRow" href="/anmeldung" on:click={toggleBurgerBool}
+	<!-- <a class="burgerRow" href="/anmeldung" on:click={toggleBurgerBool}
 		><span class="burgerHyperlink">Anmeldung</span></a
+	> -->
+	<a class="burgerRow" href="/unterlagen" on:click={toggleBurgerBool}
+		><span class="burgerHyperlink">Unterlagen</span></a
 	>
 </div>
 
