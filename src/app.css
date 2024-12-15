@@ -1,10 +1,18 @@
 :root {
-	--Color1: #62b5c0;
+	--cyan: hsl(187, 43%, 57%);
+	--cyan-dark: hsl(187, 43%, 50%);
+	--cyan-light: hsl(187, 43%, 65%);
+
+	--white: #fff;
+	--white-dark: #f5f5f5;
+
+	--shadow: rgba(0, 0, 0, 0.25);
+
 	--Color2: #f5f5f5;
 	--Color3: #f5e8ee;
 	--Color4: #f5e8ee;
 	--Color5: #ffffff;
-	--Color7: hsl(187, 43%, 50%);
+
 	--Color8: #f1f1f1;
 
 	--bigGap: 5rem; /* 75px / 16px */
@@ -17,6 +25,13 @@
 	--fs-600: 2rem;
 	--fs-500: 1.5rem;
 	--fs-400: 1rem;
+
+	--fs-p: clamp(1rem, 2vw + 0.5rem, 2rem);
+	--fs-h: clamp(1.5rem, 2.66vw + 0.75rem, 3rem);
+	--max-width: 80rem;
+
+	--min-height: 35rem;
+	--min-height-sub: calc(100vh - 26rem);
 }
 
 @media (min-width: 40rem) {
@@ -29,30 +44,21 @@
 
 body {
 	margin: 0;
-	background-color: var(--Color1);
+	background-color: var(--cyan);
 	font-family: 'Inter Variable';
 }
-
-/* ============== HEADER SECTION =================== */
-
-.logoCircle {
-	width: 3rem;
-	height: 3rem;
-	background: var(--Color2);
-	border-radius: 9999px;
-}
-
-.logo {
-	width: 4.6875rem; /* 75px / 16px */
-	height: 4.6875rem; /* 75px / 16px */
-}
-
-.siteName {
+button {
+	padding: 0.2em 0.9em;
+	border-radius: 0.5em;
 	width: fit-content;
-	font-size: clamp(0.8rem, 6vw, 3rem);
-	font-weight: 700;
-	color: var(--Color2);
+	font-weight: 600;
+	background-color: rgba(0, 0, 0, 0);
 }
+button:hover {
+	translate: 0 -0.05em;
+	cursor: pointer;
+}
+
 /* =============== DesktopNavigaiton ===================================== */
 
 /* =============== BurgerNavigaiton ===================================== */
@@ -60,7 +66,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background-color: var(--Color7);
+	background-color: var(--cyan-dark);
 	min-height: calc(100vh - 5rem);
 }
 
@@ -84,12 +90,12 @@ body {
 	background-color: white;
 }
 .burgerRow:hover .burgerHyperlink {
-	color: var(--Color7) !important;
+	color: var(--cyan-dark) !important;
 	text-decoration: none;
 	background-color: white;
 }
 .burgerRow:active .burgerHyperlink {
-	color: var(--Color7) !important;
+	color: var(--cyan-dark) !important;
 	text-decoration: none;
 	background-color: white;
 }
@@ -108,25 +114,6 @@ body {
 	opacity: 50%;
 }
 /* ============== HERO SECTION =================== */
-
-.heroSection {
-	display: flex;
-	position: relative;
-	background-color: var(--Color2);
-	width: 100%;
-	padding-top: var(--largerGap);
-	padding-bottom: var(--largerGap);
-}
-
-.landingPage {
-	display: flex;
-	flex-direction: column;
-	gap: 1.25rem;
-	z-index: 3;
-	position: relative;
-	padding-left: 7.5vw;
-	padding-right: 7.5vw;
-}
 
 /* ============== TEXT SECTION =================== */
 
@@ -180,44 +167,8 @@ a {
 	user-select: none;
 }
 
-/* ================= IMAGES ================ */
-
-.AiWoman {
-	width: 100%;
-}
-
 /* ================= MEDIA QUERIES ============== */
 
-@media (min-width: 48rem) and (min-aspect-ratio: 1/1) {
-	/* Media query based on 768px (48rem / 16px) */
-	.heroSvgDesktop {
-		display: block;
-	}
-	.heroSvgMobile {
-		display: none;
-	}
-	.heroSection {
-		min-height: calc(100vh - 5rem - (var(--largerGap) * 2));
-	}
-	.landingPage {
-		padding-right: 10vw;
-		padding-left: 10vw;
-		margin: auto;
-		margin-bottom: 10%;
-	}
-	.registerButton {
-		font-size: clamp(0.5rem, 3.33vw, 30rem);
-	}
-
-	.AiWoman {
-		z-index: 2;
-		position: absolute;
-		right: 10vw;
-		bottom: 0;
-		max-width: calc(50% - 10vw);
-		margin: 0;
-	}
-}
 .active {
 	border-bottom: 0.125em solid currentColor;
 	opacity: 20%;

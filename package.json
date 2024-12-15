@@ -36,5 +36,8 @@
 		"vite-imagetools": "^6.2.8",
 		"vitest": "^1.0.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"gsap": "^3.12.5"
+	}
 }

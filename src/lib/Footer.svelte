@@ -3,6 +3,7 @@
 	<a class="item" href="/datenschutzerklärung">Datenschutzerklärung</a>
 	<a href="https://github.com/SimonTinhofer">Webdesign by Simon Tinhofer</a>
 </footer>
+
 <style>
 	footer {
 		display: flex;
@@ -12,13 +13,13 @@
 		position: relative;
 		width: calc(100% - 2rem);
 		min-height: var(--bigGap); /* 100px / 16px */
-		background: var(--Color1);
-		color: #f5f5f5;
+		background: var(--cyan);
+		color: var(--white-dark);
 		font-size: var(--fs-400);
 		z-index: 3;
 	}
 	@media (max-width: 40rem) {
-		footer{
+		footer {
 			flex-direction: column;
 			align-items: baseline;
 			padding: 1rem;
@@ -26,7 +27,7 @@
 	}
 	a {
 		padding: 0.5rem;
-		color: var(--Color2);		
+		color: var(--white);
 	}
 	a:hover {
 		text-decoration: underline;

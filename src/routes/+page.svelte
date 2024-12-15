@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 	import HeroSection from '$lib/HeroSection.svelte';
 	import TextSection from '$lib/TextSection.svelte';
 </script>
@@ -35,3 +35,11 @@
 		padding-top: 0;
 	}
 </style>
+ -->
+<script>
+	import HeroSection from '$lib/HeroSection.svelte';
+	import HomePageContent from '$lib/HomePageContent.svelte';
+</script>
+
+<HeroSection />
+<HomePageContent />

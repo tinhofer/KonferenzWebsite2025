@@ -6,16 +6,8 @@
 	import '@fontsource-variable/inter';
 </script>
 
-<div>
-	<Header bind:isBurgerActivated={showBurger} />
-	{#if !showBurger}
-		<slot />
-		<Footer/>
-	{/if}
-</div>
-
-<style>
-	div {
-		overflow: hidden;
-	}
-</style>
+<Header bind:isBurgerActivated={showBurger}/>
+{#if !showBurger}
+	<slot />
+	<Footer />
+{/if}

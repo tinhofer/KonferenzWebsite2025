@@ -1,6 +1,7 @@
 <script>
 	import ExternalLink from '$lib/ExternalLink.svelte';
 </script>
+
 <section class="textSection">
 	<!-- <svg class="zigZagSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58 283">
 		<path
@@ -23,11 +24,24 @@
 		<h2 class="paragraphHeadline">Informationen</h2>
 		<ul>
 			<li>Datum: 29.02.2024 | 09:00 - 17:00 Uhr</li>
-			<li>Ort: Campus WU, LC - Learning Center, OG 2, LC.2.400 Clubraum <br/><a class="link" href="https://campus.wu.ac.at/?q=LC.2.400" target="_blank">WU Gebäudeplan<ExternalLink /></a></li>
-			<li>Kontakt: Institut für Arbeits- und Sozialrecht, WU Wien <br/> T: 01 313 36 – 4637 <br/> E: <a href="mailto:arbeitsrecht.sozialrecht@wu.ac.at" target="_blank">arbeitsrecht.sozialrecht@wu.ac.at</a> </li>
-		<ul>
+			<li>
+				Ort: Campus WU, LC - Learning Center, OG 2, LC.2.400 Clubraum <br /><a
+					class="link"
+					href="https://campus.wu.ac.at/?q=LC.2.400"
+					target="_blank">WU Gebäudeplan<ExternalLink /></a
+				>
+			</li>
+			<li>
+				Kontakt: Institut für Arbeits- und Sozialrecht, WU Wien <br /> T: 01 313 36 – 4637 <br /> E:
+				<a href="mailto:arbeitsrecht.sozialrecht@wu.ac.at" target="_blank"
+					>arbeitsrecht.sozialrecht@wu.ac.at</a
+				>
+			</li>
+			<ul></ul>
+		</ul>
 	</div>
 </section>
+
 <style>
 	.textSection {
 		display: flex;
@@ -40,17 +54,17 @@
 		padding: 2rem;
 		width: calc(50% - 4.5rem);
 		font-size: var(--fs-400);
-		background-color: var(--Color5);
+		background-color: var(--white-dark);
 	}
-	@media (max-width:50rem){
-		.paragraphContainer{
+	@media (max-width: 50rem) {
+		.paragraphContainer {
 			width: 100%;
 			padding: 1rem;
 		}
 	}
 	h2 {
 		margin-bottom: var(--smallGap);
-		color: black;
+		color: var(--black);
 		font-weight: 700;
 		word-wrap: break-word;
 		font-size: var(--fs-500);
@@ -59,23 +73,23 @@
 	}
 
 	p {
-		color: black;
+		color: var(--black);
 		font-weight: 400;
 		word-wrap: break-word;
 		font-size: var(--fs-400);
 		margin: 0;
 		max-width: 45ch;
 	}
-	ul{
+	ul {
 		padding-left: 1rem;
 	}
 	li:not(:last-child) {
-    	margin-bottom: 1.5rem;
+		margin-bottom: 1.5rem;
 		word-wrap: break-word;
 	}
 	a {
 		white-space: nowrap;
-		color: var(--Color1);
+		color: var(--cyan);
 		text-decoration: none;
 	}
 	a:hover {

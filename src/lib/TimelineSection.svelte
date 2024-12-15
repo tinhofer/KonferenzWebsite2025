@@ -2,9 +2,10 @@
 	import InternalLink from '$lib/InternalLink.svelte';
 	import ExternalLink from '$lib/ExternalLink.svelte';
 </script>
+
 <section class="timelineSection">
 	<div class="timelineContainer">
-		<div class="timelineRect"/>
+		<div class="timelineRect" />
 		<div class="eventContainer">
 			<div class="eventTime">09:00</div>
 			<svg class="eventDotSvg" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -13,7 +14,8 @@
 			<div class="eventTextContainer">
 				<div class="eventHeading">Begrüßung und Eröffnung</div>
 				<div class="eventSubtext">
-					<a href="/speaker#Auer-Mayer">Susanne Auer-Mayer<InternalLink /></a> und <a href="/speaker#Tinhofer">Andreas Tinhofer<InternalLink /></a>
+					<a href="/speaker#Auer-Mayer">Susanne Auer-Mayer<InternalLink /></a> und
+					<a href="/speaker#Tinhofer">Andreas Tinhofer<InternalLink /></a>
 				</div>
 			</div>
 		</div>
@@ -24,9 +26,11 @@
 			</svg>
 			<div class="eventTextContainer">
 				<div class="eventHeading">
-					Einführung in die technischen Grundlagen aktueller KI-Systeme
+					Die Veränderung von Arbeit im Kontext generativer KI - Chancen und Herausforderungen
 				</div>
-				<div class="eventSubtext"><a href="/speaker#Heitzinger">Clemens Heitzinger<InternalLink /></a></div>
+				<div class="eventSubtext">
+					<a href="/speaker#Heitzinger">Clemens Heitzinger<InternalLink /></a>
+				</div>
 			</div>
 		</div>
 		<div class="eventContainer">
@@ -35,10 +39,10 @@
 				<ellipse cx="7.5" cy="7.5" rx="7.5" ry="7.5" fill="#62B5C0" />
 			</svg>
 			<div class="eventTextContainer">
-				<div class="eventHeading">
-					Der Einsatz von KI-Systemen aus der Sicht des HR-Managements
+				<div class="eventHeading">Der Einsatz von KI-Systemen aus der Sicht des HR-Managements</div>
+				<div class="eventSubtext">
+					<a href="/speaker#Reichel">Astrid Reichel<InternalLink /></a>
 				</div>
-				<div class="eventSubtext"><a href="/speaker#Reichel">Astrid Reichel<InternalLink /></a></div>
 			</div>
 		</div>
 		<div class="eventContainer">
@@ -58,7 +62,9 @@
 			</svg>
 			<div class="eventTextContainer">
 				<div class="eventHeading">Was bedeutet der AI Act für die Praxis?</div>
-				<div class="eventSubtext"><a href="/speaker#Eisenberger">Iris Eisenberger<InternalLink /></a></div>
+				<div class="eventSubtext">
+					<a href="/speaker#Eisenberger">Iris Eisenberger<InternalLink /></a>
+				</div>
 			</div>
 		</div>
 		<div class="eventContainer">
@@ -68,7 +74,9 @@
 			</svg>
 			<div class="eventTextContainer">
 				<div class="eventHeading">Datenschutzrechtliche Fragen des KI-Einsatzes</div>
-				<div class="eventSubtext"><a href="/speaker#Warter">Johannes Warter<InternalLink /></a></div>
+				<div class="eventSubtext">
+					<a href="/speaker#Warter">Johannes Warter<InternalLink /></a>
+				</div>
 			</div>
 		</div>
 		<div class="eventContainer">
@@ -88,7 +96,9 @@
 			</svg>
 			<div class="eventTextContainer">
 				<div class="eventHeading">Algorithmische Diskriminierung</div>
-				<div class="eventSubtext"><a href="/speaker#Tinhofer">Andreas Tinhofer<InternalLink /></a></div>
+				<div class="eventSubtext">
+					<a href="/speaker#Tinhofer">Andreas Tinhofer<InternalLink /></a>
+				</div>
 			</div>
 		</div>
 		<div class="eventContainer">
@@ -100,7 +110,9 @@
 				<div class="eventHeading">
 					Mitwirkung der Belegschaft bei der Einführung von KI-Systemen
 				</div>
-				<div class="eventSubtext"><a href="/speaker#Greiner">Conrad Greiner<InternalLink /></a></div>
+				<div class="eventSubtext">
+					<a href="/speaker#Greiner">Conrad Greiner<InternalLink /></a>
+				</div>
 			</div>
 		</div>
 		<div class="eventContainer">
@@ -120,7 +132,11 @@
 			</svg>
 			<div class="eventTextContainer">
 				<div class="eventHeading">Einsatz von KI-Systemen in der Praxis</div>
-				<div class="eventSubtext"><a href="/speaker#Angerler">Eva Angerler<InternalLink/></a>, <a href="/speaker#Leimüller">Gertraud Leimüller<InternalLink/></a> und <a href="/speaker#Mader">Thomas Mader<InternalLink/></a></div>
+				<div class="eventSubtext">
+					<a href="/speaker#Angerler">Eva Angerler<InternalLink /></a>,
+					<a href="/speaker#Leimüller">Gertraud Leimüller<InternalLink /></a>
+					und <a href="/speaker#Mader">Thomas Mader<InternalLink /></a>
+				</div>
 			</div>
 		</div>
 		<div class="eventContainer">
@@ -130,34 +146,34 @@
 			</svg>
 			<div class="eventTextContainer">
 				<div class="eventHeading">
-					Handlungsfelder für einen KI-Einsatz zum Nutzen der Beschäftigten und des Betriebes (Podiumsdiskussion)
+					Handlungsfelder für einen KI-Einsatz zum Nutzen der Beschäftigten und des Betriebes
+					(Podiumsdiskussion)
 				</div>
 				<div class="eventSubtext">
-					<a href="/speaker#Gogola">Michael Gogola<InternalLink/></a>, 
-					<a href="/speaker#Ludwig">Emanuel Ludwig<InternalLink/></a>, 
-					<a href="/speaker#Ritzberger-Moser">Anna Ritzberger-Moser<InternalLink/></a> und
-					<a href="/speaker#Sommer">Roland Sommer<InternalLink/></a>
+					<a href="/speaker#Gogola">Michael Gogola<InternalLink /></a>,
+					<a href="/speaker#Ludwig">Emanuel Ludwig<InternalLink /></a>,
+					<a href="/speaker#Ritzberger-Moser">Anna Ritzberger-Moser<InternalLink /></a> und
+					<a href="/speaker#Sommer">Roland Sommer<InternalLink /></a>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-
 <style>
 	.timelineSection {
+		width: calc(100% - 2 * var(--largerGap));
 		display: flex;
-		min-height: 80%;
-		background-color: var(--Color5);
-		padding: 1rem;
+		min-height: var(--min-height-sub);
+		background-color: var(--white-dark);
+		padding: var(--largerGap);
 		align-items: center;
-		background-color: white;
+		background-color: var(--white);
 		position: relative;
 		z-index: 2;
-		margin-bottom: 1rem;
 	}
 	@media (max-width: 30rem) {
-		.timelineSection{
+		.timelineSection {
 			margin-bottom: 0;
 		}
 	}
@@ -174,7 +190,7 @@
 		width: 5px;
 		height: 100%;
 		border-radius: 3em;
-		background-color: var(--Color1);
+		background-color: var(--cyan);
 	}
 	.eventContainer {
 		margin-top: 1rem;
@@ -185,7 +201,7 @@
 		min-height: 4rem;
 
 		font-size: var(--fs-400);
-		color: black;
+		color: var(--black);
 	}
 	.eventTime {
 		flex-shrink: 0;
@@ -214,7 +230,7 @@
 	}
 	a {
 		white-space: nowrap;
-		color: var(--Color1);
+		color: var(--cyan);
 		text-decoration: none;
 	}
 	a:hover {
@@ -224,7 +240,7 @@
 		background-size: 5em 0.15em;
 	}
 	svg {
-		color: var(--Color1);
+		color: var(--cyan);
 		height: 1em;
 	}
 </style>
