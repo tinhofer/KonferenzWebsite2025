@@ -4,6 +4,8 @@
 	import LexisNexisSvg from '$lib/images/Logo_LexisNexis.svg';
 	import ManzSvg from '$lib/images/Logo_Manz.svg';
 	import WKOSvg from '$lib/images/Logo_WKO.svg';
+	import LittlerSvg from '$lib/images/Logo_Littler.svg';
+	import KrichmayerTinhoferSvg from '$lib/images/Logo_KrichmayrTinhofer.svg';
 
 	var inlineContainer;
 	function openText(/**@type {MouseEvent}*/ event) {
@@ -24,17 +26,6 @@
 
 <div class="outerContainer">
 	<div class="inlineContainer">
-		<button class="sponsorContainer" on:click={openText} id="ak">
-			<img src={AKWienSvg} alt="Logo der Arbeiterkammer Wien" />
-			<p class="hide">
-				Die <span>Arbeiterkammer (AK)</span> vertritt die Interessen von fast 4 Millionen arbeitenden
-				Menschen in Österreich. Wir kämpfen für ihre Rechte in der Arbeit – und dafür, dass sie gehört,
-				fair bezahlt und rechtlich abgesichert sind. Das Beste daran: Der AK muss man nicht extra beitreten
-				– durch das Arbeiterkammergesetz sind alle Arbeitnehmer:innen automatisch AK Mitglieder. Das
-				gilt auch für Lehrlinge, Arbeitslose und Menschen in Karenz – sie alle können die gesamten Leistungen
-				der AK nutzen.
-			</p>
-		</button>
 		<button class="sponsorContainer" on:click={openText} id="fa">
 			<img src={FacultasSvg} alt="Logo des Verlages Facultas" />
 			<p class="hide">
@@ -47,16 +38,14 @@
 				wissenschaftsnaher Dienstleistungen.
 			</p>
 		</button>
-		<button class="sponsorContainer" on:click={openText} id="le">
-			<img src={LexisNexisSvg} alt="Logo des Unternehmens LexisNexis" />
+
+		<button class="sponsorContainer" on:click={openText} id="li">
+			<img src={LittlerSvg} alt="Logo der Kanzlei Littler" />
 			<p class="hide">
-				<span>LexisNexis Österreich</span> ist ein führender Anbieter intelligenter Rechtsinformation.
-				Als Pionier bei neuen Technologien kombiniert LexisNexis hochwertige Information aus Recht, Steuern
-				& Wirtschaft mit zukunftsweisenden digitalen Lösungen, um seinen Kund:innen mit schnelleren und
-				relevanteren Antworten, zu besseren Entscheidungen und damit zu Vorsprung in ihrem beruflichen
-				Alltag zu verhelfen. Die Produktpalette umfasst die Recherchelösung Lexis 360®, Legal Tech Produkte
-				wie Lexis SmartScan und Lexis ContractMaster, Lexis WhistleComplete, Closd, Caselex, Compliance
-				Praxis, Fachzeitschriften, Fachliteratur, Skripten und KODEX.
+				Ob in Österreich, Europa oder weltweit – als Teil der weltweit größten Arbeitsrechtskanzlei
+				mit über 1.850 Anwälten an 100+ Standorten, stellen wir für jede arbeitsrechtliche
+				Herausforderung ein perfekt eingespieltes Team aus hochkarätigen Expertinnen und Experten
+				zusammen. Arbeitsrechtliche Beratung aus einer Hand. Von lokal bis global.
 			</p>
 		</button>
 		<button class="sponsorContainer" on:click={openText} id="ma">
@@ -70,6 +59,14 @@
 				und ist Teil der als Medienunternehmen des 21. Jahrhunderts geführten MANZ-Gruppe.
 			</p>
 		</button>
+		<button class="sponsorContainer" on:click={openText} id="kr">
+			<img src={KrichmayerTinhoferSvg} alt="Logo der Kanzlei KrichmayerTinhofer" />
+			<p class="hide">
+				Die Kanzlei Krichmayr Tinhofer berät Unternehmen und Führungskräfte in allen
+				arbeitsrechtlichen Themenstellungen. Unsere Expertise umfasst auch den internationalen
+				Personaleinsatz sowie New Work und neue Technologien.
+			</p>
+		</button>
 		<button class="sponsorContainer" on:click={openText} id="wk">
 			<img src={WKOSvg} alt="Logo der Wirtschaftskammer Österreichs" />
 			<p class="hide">
@@ -78,6 +75,29 @@
 				Politik ein, z.B. für Steuerentlastung, Bürokratie-Abbau, Förderungen.
 			</p>
 		</button>
+		<!-- <button class="sponsorContainer" on:click={openText} id="ak">
+			<img src={AKWienSvg} alt="Logo der Arbeiterkammer Wien" />
+			<p class="hide">
+				Die <span>Arbeiterkammer (AK)</span> vertritt die Interessen von fast 4 Millionen arbeitenden
+				Menschen in Österreich. Wir kämpfen für ihre Rechte in der Arbeit – und dafür, dass sie gehört,
+				fair bezahlt und rechtlich abgesichert sind. Das Beste daran: Der AK muss man nicht extra beitreten
+				– durch das Arbeiterkammergesetz sind alle Arbeitnehmer:innen automatisch AK Mitglieder. Das
+				gilt auch für Lehrlinge, Arbeitslose und Menschen in Karenz – sie alle können die gesamten Leistungen
+				der AK nutzen.
+			</p>
+		</button> -->
+		<!-- <button class="sponsorContainer" on:click={openText} id="le">
+			<img src={LexisNexisSvg} alt="Logo des Unternehmens LexisNexis" />
+			<p class="hide">
+				<span>LexisNexis Österreich</span> ist ein führender Anbieter intelligenter Rechtsinformation.
+				Als Pionier bei neuen Technologien kombiniert LexisNexis hochwertige Information aus Recht, Steuern
+				& Wirtschaft mit zukunftsweisenden digitalen Lösungen, um seinen Kund:innen mit schnelleren und
+				relevanteren Antworten, zu besseren Entscheidungen und damit zu Vorsprung in ihrem beruflichen
+				Alltag zu verhelfen. Die Produktpalette umfasst die Recherchelösung Lexis 360®, Legal Tech Produkte
+				wie Lexis SmartScan und Lexis ContractMaster, Lexis WhistleComplete, Closd, Caselex, Compliance
+				Praxis, Fachzeitschriften, Fachliteratur, Skripten und KODEX.
+			</p>
+		</button> -->
 	</div>
 </div>
 
@@ -125,20 +145,20 @@
 			max-width: calc(33.33% - 0.67rem);
 			padding: 2rem;
 		}
-		#le {
+		#ma {
 			order: 1;
 		}
-		#ma {
+		#wk {
 			order: 2;
 		}
-		#wk {
+		#kr {
 			order: 3;
 		}
-		#ak {
-			order: 4;
+		#li {
+			order: 5;
 		}
 		#fa {
-			order: 5;
+			order: 4;
 		}
 	}
 	img {

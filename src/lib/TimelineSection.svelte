@@ -62,9 +62,7 @@
 			</svg>
 			<div class="eventTextContainer">
 				<div class="eventHeading">Status quo bei der Umsetzung der KI-VO in Österreich</div>
-				<div class="eventSubtext">
-					<a href="/people#Gorzala">Jeanette Gorzala<InternalLink /></a>
-				</div>
+				<div class="eventSubtext">Jeannette Gorzala</div>
 			</div>
 		</div>
 		<div class="eventContainer">
