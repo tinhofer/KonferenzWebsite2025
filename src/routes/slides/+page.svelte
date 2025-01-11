@@ -8,7 +8,7 @@
 	<title>Tagung "Automatisierung der Arbeit": Präsentationen</title>
 	<meta
 		name="description"
-		content="Hier kann man sich für die Präsentationen der Tagung "Automatisierung der Arbeit" herunterladen."
+		content="Hier kann man sich für die Präsentationen der Tagung Automatisierung der Arbeit herunterladen."
 	/>
 </svelte:head>
 <SubPageLayout Heading={heading}><PresentationsSection /></SubPageLayout>

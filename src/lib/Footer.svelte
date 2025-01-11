@@ -1,7 +1,9 @@
 <footer>
-	<a class="item" href="/impressum">Impressum</a>
-	<a class="item" href="/datenschutzerklärung">Datenschutzerklärung</a>
-	<a href="https://github.com/SimonTinhofer">Webdesign by Simon Tinhofer</a>
+	<div class="container"><a class="item" href="/impressum">Impressum</a></div>
+	<div class="container"><a class="item" href="/datenschutzerklärung">Datenschutzerklärung</a></div>
+	<div class="container">
+		<a href="https://github.com/SimonTinhofer">Webdesign by Simon Tinhofer</a>
+	</div>
 </footer>
 
 <style>
@@ -11,23 +13,34 @@
 		align-items: center;
 		justify-content: space-evenly;
 		position: relative;
-		width: calc(100% - 2rem);
+		width: 100%;
 		min-height: var(--bigGap); /* 100px / 16px */
 		background: var(--cyan);
 		color: var(--white-dark);
 		font-size: var(--fs-400);
 		z-index: 3;
 	}
-	@media (max-width: 40rem) {
+	.container {
+		width: calc(100% / 3);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	@media (max-width: 55rem) {
 		footer {
 			flex-direction: column;
-			align-items: baseline;
 			padding: 1rem;
+		}
+		.container {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
 		}
 	}
 	a {
 		padding: 0.5rem;
-		color: var(--white);
+		color: var(--white-dark);
 	}
 	a:hover {
 		text-decoration: underline;

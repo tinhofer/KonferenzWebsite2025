@@ -1,6 +1,6 @@
 <script>
 	// @ts-nocheck
-	import kiIcon from '$lib/images/KIIcon.png';
+	import kiIcon from '$lib/images/KIIcon.svg';
 	let anim1;
 	let anim2;
 	let anim3;
@@ -8,31 +8,89 @@
 	let anim5;
 	let anim6;
 
-	let text1 = 'Wie kann ich Ihnen helfen?';
+	let text1 = 'Wie kann ich dir helfen?';
 	let text2 =
-		'Ich werde einen umfassenden Trainingsplan für Führungskräfte entwickeln, der verschiedene wichtige Kompetenzbereiche abdeckt.<br /><br />Trainingsplan für Führungskräfte: Ganzheitliche Entwicklung von Führungskompetenzen <br /><br />1. Selbstführung und Persönlichkeitsentwicklung <br />Modul A: Emotionale Intelligenz <br />Selbstwahrnehmung und Emotionsmanagement <br />Entwicklung von Resilienz und Stressresistenz <br />Reflexion der eigenen Führungspersönlichkeit';
-
+		'Hier ist ein strukturiertes Konzept für Generationenmanagement in einem Unternehmen, das auf Nachhaltigkeit, Produktivität und Zusammenarbeit zwischen den Generationen abzielt:<br><br>1. Zielsetzung des Generationenmanagements<br><br>Das Ziel ist es, die Zusammenarbeit zwischen den Generationen zu fördern, Fachwissen zu sichern, die Zufriedenheit der Mitarbeitenden zu erhöhen und die Leistungsfähigkeit des Unternehmens langfristig zu sichern.<br><br>Erhalt des Erfahrungswissens älterer Mitarbeitender.<br>Integration und Entwicklung jüngerer Generationen.<br>Schaffung von Synergien durch generationenübergreifende Zusammenarbeit.<br>Förderung von Vielfalt und Verbesserung der Unternehmenskultur.';
 	import { gsap } from 'gsap';
 	import { TextPlugin } from 'gsap/TextPlugin';
 	gsap.registerPlugin(TextPlugin); // Register the TextPlugin
 
 	import { onMount } from 'svelte';
 	import { blur } from 'svelte/transition';
-	import { navbarAnimation } from './AnimationStore';
+	import { animationPlayed, navbarAnimation, navbarSetup } from './AnimationStore';
+
+	const inputEvents = ['pointerdown', 'keydown', 'wheel', 'touchstart', 'scroll'];
 
 	onMount(() => {
 		Start();
 	});
+
+	let hasAnimationPlayed = false;
+
+	animationPlayed.subscribe((value) => {
+		hasAnimationPlayed = value;
+	});
+
 	function Start() {
+		if (typeof window !== 'undefined') {
+			if (!hasAnimationPlayed) {
+				PlayAnimation();
+				animationPlayed.set(true);
+			} else {
+				SkipAnimation();
+			}
+		}
+	}
+	let triggerFunction;
+	let setupFunction;
+
+	// Subscribe to get the latest function
+	navbarAnimation.subscribe((fn) => {
+		triggerFunction = fn;
+	});
+
+	navbarSetup.subscribe((fn) => {
+		setupFunction = fn;
+	});
+
+	function setNav() {
+		setupFunction();
+	}
+	function triggerNav() {
+		triggerFunction();
+	}
+	function SkipAnimation() {
+		let timeline = gsap.timeline();
+		timeline.set(anim2, { text: text1, ease: 'none' }, 0);
+		timeline.set(
+			anim5,
+			{
+				text: {
+					value: text2
+				},
+				ease: 'none'
+			},
+			0
+		);
+		timeline.to('.chatOverlay', { opacity: 0.3, duration: 1 }, 0);
+		timeline.to('.chat', { filter: 'blur(5px)', duration: 1 }, 0);
+		timeline.to(
+			'.heroContainer',
+			{
+				filter: 'opacity(1)',
+				y: 0,
+				duration: 1, // Animation duration
+				ease: 'power2.out'
+			},
+			0
+		);
+	}
+	function PlayAnimation() {
 		let timeline = gsap.timeline();
 
-		document.addEventListener('click', (event) => {
-			let time = timeline.time();
-			time += 2;
-			timeline.time(time);
-		});
+		document.body.style.overflow = 'hidden';
 
-		timeline.from(anim1, { opacity: 0, duration: 1, ease: 'power2.in', onStart: callFunction });
+		timeline.from(anim1, { opacity: 0, duration: 1, ease: 'power2.in', onStart: setNav });
 
 		timeline.to(anim2, { text: text1, duration: 1, ease: 'none' });
 
@@ -47,10 +105,10 @@
 				value: text2
 			},
 			delay: 1,
-			duration: 4,
+			duration: 6,
 			ease: 'none'
 		});
-		timeline.to('.chatOverlay', { opacity: 0.3, duration: 1, delay: 3 }, '<');
+		timeline.to('.chatOverlay', { opacity: 0.3, duration: 1, delay: 4, onStart: triggerNav }, '<');
 		timeline.to('.chat', { filter: 'blur(5px)', duration: 1 }, '<');
 		timeline.to(
 			'.heroContainer',
@@ -59,21 +117,24 @@
 				y: 0,
 				duration: 1, // Animation duration
 				ease: 'power2.out',
-				delay: 0.2
+				delay: 0.2,
+				onStart: enableScroll
 			},
 			'<'
 		);
 
-		let triggerFunction;
-
-		// Subscribe to get the latest function
-		navbarAnimation.subscribe((fn) => {
-			triggerFunction = fn;
-		});
-
-		function callFunction() {
-			triggerFunction();
+		function enableScroll() {
+			document.body.style.overflow = '';
 		}
+		function handleInput(event) {
+			console.log('event');
+			if (timeline.time() < 8.5) {
+				timeline.time(8.5);
+			}
+			inputEvents.forEach((event) => window.removeEventListener(event, handleInput));
+		}
+
+		inputEvents.forEach((event) => window.addEventListener(event, handleInput));
 	}
 </script>
 
@@ -88,7 +149,7 @@
 		</div>
 		<div class="userMessage">
 			<div class="userBubble" bind:this={anim3}>
-				<div class="userText">Erstellen mir einen Personalmanagmentplan!</div>
+				<div class="userText">Erstelle ein Konzept für Generationenmanagement im Betrieb!</div>
 			</div>
 		</div>
 		<div class="botMessage">
@@ -101,8 +162,8 @@
 	<div class="heroLayer">
 		<div class="heroContainer">
 			<h1>Automatisierung der Arbeit</h1>
-			<h2>Was kann generative KI, was kann sie nicht?</h2>
-			<button>Anmelden</button>
+			<h3>2. Fachtagung am 10.3.2025</h3>
+			<h2>Was bedeutet GenAI für<br />die Arbeitswelt?</h2>
 			<img src={kiIcon} alt="" class="heroIcon" />
 		</div>
 	</div>
@@ -112,16 +173,16 @@
 	.chatOverlay {
 		opacity: 0;
 		position: absolute;
+		height: calc(100% - var(--bigGap));
 		width: 100%;
-		height: 100%;
 		background: rgb(0, 0, 0);
 		z-index: 1;
 	}
 	.chat {
 		background-color: var(--cyan);
 		padding: 5vh;
-		height: 90vh;
-		font-size: 2.25rem;
+		height: calc(90vh - var(--bigGap));
+		font-size: var(--fs-p);
 		display: flex;
 		flex-direction: column;
 		gap: 3rem;
@@ -204,32 +265,24 @@
 		line-height: 1.2;
 	}
 	h2 {
-		order: 2;
+		order: 3;
 		padding: 0;
 		margin: 0;
 
 		font-weight: 400;
-		font-size: clamp(1.75rem, 3.5vw, 25rem); /* 0.5px, 5vw, 3.25rem */
+		font-size: clamp(1.5rem, 2.75vw, 20rem); /* 0.5px, 5vw, 3.25rem */
 		word-wrap: break-word;
 
 		max-width: 66%;
 	}
-	button {
-		order: 3;
-		padding: 0.2em 0.9em;
-		border-radius: 0.5em;
-		width: fit-content;
-		font-size: 3rem;
-		font-weight: 600;
-		background-color: rgba(0, 0, 0, 0);
-		border: solid 0.1em #fff;
-		color: #fff;
-		font-size: clamp(1.75rem, 3.5vw, 25rem);
-		text-decoration: none;
-	}
-	button:hover {
-		transform: translateY(-2%);
-		cursor: pointer;
+	h3 {
+		order: 2;
+		padding: 0;
+		margin: 0;
+		font-weight: 500;
+		font-size: clamp(1.75rem, 3.5vw, 25rem); /* 0.5px, 5vw, 3.25rem */
+		word-wrap: break-word;
+		max-width: 80%;
 	}
 	.heroIcon {
 		position: absolute;
@@ -238,22 +291,26 @@
 		height: 17.5vw;
 	}
 
-	@media (max-width: 48rem) {
+	@media (max-width: 45rem) {
 		.heroContainer {
-			align-items: center;
-			text-align: center;
+			align-items: left;
+			text-align: left;
 		}
 		.heroIcon {
+			align-self: center;
 			position: inherit;
-			width: 50%;
-			height: 50%;
+			width: max(50%, 15rem);
+			height: max(50%, 15rem);
 			order: 0;
 		}
 		h2 {
 			max-width: 100%;
 		}
+		h3 {
+			max-width: 100%;
+		}
 		.heroContainer {
-			max-width: 90%;
+			max-width: min(90%, 25rem);
 		}
 	}
 </style>

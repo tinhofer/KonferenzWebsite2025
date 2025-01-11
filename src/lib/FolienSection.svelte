@@ -20,8 +20,7 @@
 	}
 	function checkPsw() {
 		var hashedPsw = simpleHash(psw);
-		console.log(hashedPsw);
-		if (hashedPsw == 3556498) {
+		if (hashedPsw == 103055) {
 			authanticated = true;
 		} else {
 			alert('Das angegebene Passwort ist leider falsch.');
@@ -35,33 +34,46 @@
 	console.log(hash);
 </script>
 
-<div></div>
-{#if authanticated}
-	<div class="inlineContainer">
-		<div class="presentationContainer">
-			<h2>Downloadlinks zu den Folien:</h2>
-			<ul>
-				<li><a href="/download.pdf" target="_blank">Folien_Tinhofer.pdf<InternalLink /></a></li>
-				<li><a href="/download.pdf" target="_blank">Folien_Reichel.pdf<InternalLink /></a></li>
-				<li><a href="/download.pdf" target="_blank">Folien_Greiner.pdf<InternalLink /></a></li>
-				<li><a href="/download.pdf" target="_blank">Folien_Warter.pdf<InternalLink /></a></li>
-				<li><a href="/download.pdf" target="_blank">Folien_Heitzinger.pdf<InternalLink /></a></li>
-				<li><a href="/download.pdf" target="_blank">Folien_Auer-Mayer.pdf<InternalLink /></a></li>
-				<li><a href="/download.pdf" target="_blank">Folien_Eisenberger.pdf<InternalLink /></a></li>
-			</ul>
+<div class="bg">
+	{#if authanticated}
+		<div class="inlineContainer">
+			<div class="presentationContainer">
+				<h2>Downloadlinks zu den Folien:</h2>
+				<ul>
+					<li><a href="/download.pdf" target="_blank">Folien_Tinhofer.pdf<InternalLink /></a></li>
+					<li><a href="/download.pdf" target="_blank">Folien_Reichel.pdf<InternalLink /></a></li>
+					<li><a href="/download.pdf" target="_blank">Folien_Greiner.pdf<InternalLink /></a></li>
+					<li><a href="/download.pdf" target="_blank">Folien_Warter.pdf<InternalLink /></a></li>
+					<li><a href="/download.pdf" target="_blank">Folien_Heitzinger.pdf<InternalLink /></a></li>
+					<li><a href="/download.pdf" target="_blank">Folien_Auer-Mayer.pdf<InternalLink /></a></li>
+					<li>
+						<a href="/download.pdf" target="_blank">Folien_Eisenberger.pdf<InternalLink /></a>
+					</li>
+				</ul>
+			</div>
 		</div>
-	</div>
-{:else}
-	<div class="inlineContainer">
-		<div class="presentationContainer">
-			<p>Bitte geben sie das Passwort ein, um Zugriff auf die Unterlagen zu bekommen.</p>
-			<input bind:value={psw} placeholder="password" />
-			<button on:click={checkPsw}>enter</button>
+	{:else}
+		<div class="inlineContainer">
+			<div class="presentationContainer">
+				<p>Bitte geben sie das Passwort ein, um Zugriff auf die Unterlagen zu bekommen.</p>
+				<input bind:value={psw} placeholder="password" />
+				<button on:click={checkPsw}>enter</button>
+			</div>
 		</div>
-	</div>
-{/if}
+	{/if}
+</div>
 
 <style>
+	.bg {
+		width: 100%;
+		background-color: var(--white-dark);
+		min-height: var(--min-height-sub);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		color: var(--cyan);
+	}
 	.inlineContainer {
 		display: flex;
 		flex-direction: row;
@@ -102,7 +114,6 @@
 	}
 	h2 {
 		margin-bottom: var(--smallGap);
-		color: black;
 		font-weight: 700;
 		word-wrap: break-word;
 		font-size: var(--fs-500);

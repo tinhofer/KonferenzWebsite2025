@@ -8,19 +8,19 @@
 		<div class="heading">Versuche zur Kontrolle von Superintelligenz</div>
 		<div class="descripiton">
 			AI wird immer ausgefeilter. Daher wird erforscht, wie man eine superintelligente AI unter
-			Kontrolle behalten kann. <a href="google.com">Hier weiterlesen</a>
+			Kontrolle behalten kann. <a href="https://google.com">Hier weiterlesen</a>
 		</div>
 	</div>
 </div>
 
 <style>
 	.item {
-		max-width: 500px;
+		max-width: 400px;
 		background-color: var(--white);
 		font-size: 1.75rem;
 	}
 	img {
-		max-width: 500px;
+		max-width: 400px;
 	}
 	.textarea {
 		padding: 10px;

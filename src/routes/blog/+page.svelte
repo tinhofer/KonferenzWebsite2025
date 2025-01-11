@@ -31,7 +31,7 @@
 	}
 	.blogContainer {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, 500px);
+		grid-template-columns: repeat(auto-fit, 400px);
 		max-width: 1600px;
 		gap: 30px;
 		justify-content: center;

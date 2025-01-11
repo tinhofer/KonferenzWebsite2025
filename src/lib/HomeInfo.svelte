@@ -1,16 +1,15 @@
 <div class="info">
 	<div class="infoContainer">
-		<div class="content infoContent">
-			<div class="leftInfo">ZEIT<br />ORT<br />KONTAKT</div>
-			<div class="rightInfo">
-				<div>
-					29.02.2024 | 09:00 - 17:00 Uhr<br />Campus WU | Gebäude LC, Clubraum LC.2.400<br
-					/>Institut für Arbeits- und Sozialrecht, WU<br />T: 01/313 36 – 4637<br />E:
-					arbeitsrecht.sozialrecht@wu.ac.at
-				</div>
-			</div>
+		<div class="rightInfo">
+			29.02.2024 | 09:00 - 17:00 Uhr<br />Campus WU | Gebäude LC, Clubraum LC.2.400<br />Institut
+			für Arbeits- und Sozialrecht, WU<br />T: 01/313 36 – 4637<br />E:
+			arbeitsrecht.sozialrecht@wu.ac.at
 		</div>
-		<button>Anmelden</button>
+		<a
+			href="mailto:arbeitsrecht.sozialrecht@wu.ac.at?subject=Anmeldung zur Tagung „Automatisierung der Arbeit“ an der WU am 29.02.2024&amp;body=Hiermit melde ich mich zur o.g. kostenlosen Tagung am 29.02.2024 an. Ich nehme zur Kenntnis, dass die Teilnehmerzahl aus Platzgründen begrenzt ist. Sollte ich an der Teilnahme verhindert sein, so werde ich mich per E-Mail abmelden, um anderen Interessenten die Teilnahme zu ermöglichen.%0D%0A%0D%0AName: %0D%0A%0D%0AFirma/Organisation: %0D%0A%0D%0A Hinweis: Wir weisen darauf hin, dass bei der Veranstaltung fotografiert wird und diese Fotos für Veranstaltungsberichte im Internet oder in anderen Medien verwendet werden könnten. Sollten Sie damit nicht einverstanden sein, so teilen Sie dies bitte den Organisatoren vor Ort mit."
+			target="_blank"
+			class="button buttonAnmeldung">Anmelden</a
+		>
 	</div>
 </div>
 
@@ -30,27 +29,22 @@
 	.infoContainer {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		align-items: flex-start;
 		justify-content: center;
+
 		gap: var(--midGap);
-		min-width: 60%;
 		padding: var(--largerGap);
 		min-height: var(--min-height);
 		max-width: var(--max-width);
 	}
-	.infoContent {
-		font-size: var(--fs-h);
+	.rightInfo {
+		font-size: clamp(1rem, 4vw, 3rem);
 		font-weight: 400;
-		display: flex;
-		gap: 1rem;
 		text-shadow: var(--shadow) 0.1em 0.1em 1px;
+		text-align: left;
+		word-wrap: break-word;
 	}
-	.leftInfo {
-		text-align: right;
-		font-weight: 700;
-	}
-	button {
-		margin-top: var(--midGap);
+	.buttonAnmeldung {
 		border: solid 0.1em #fff;
 		color: #fff;
 		font-size: var(--fs-h);

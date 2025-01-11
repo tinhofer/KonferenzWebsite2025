@@ -5,7 +5,7 @@
 	import { onMount } from 'svelte';
 	import logoPng from '$lib/images/Logo.svg';
 	import gsap from 'gsap';
-	import { navbarAnimation } from './AnimationStore';
+	import { navbarAnimation, navbarSetup } from './AnimationStore';
 	export var isBurgerActivated = false;
 	/**@type {HTMLDivElement}*/
 	let navBar;
@@ -59,20 +59,26 @@
 
 	let header;
 
+	function setupNavbar() {
+		gsap.set(header, { opacity: 0 });
+	}
 	function animateNavbar() {
-		gsap.from(header, { opacity: 0, duration: 2, delay: 9 });
+		gsap.to(header, { opacity: 1, duration: 1, ease: 'power2.in' });
 	}
 
 	navbarAnimation.set(animateNavbar);
+	navbarSetup.set(setupNavbar);
 </script>
 
 <header bind:this={header}>
-	<a href="/" class="logoContainer"
-		><img
+	<span class="logoContainer">
+		<img
 			src={logoPng}
 			alt="Das Logo des Anwaltes Dr. Andreas Tinhofer und der Wirtschaftsuniversität Wien"
-		/></a
-	>
+		/>
+		<a class="kanzleiLink" href="https://www.labourlaw.at/" , target="_blank"> </a>
+		<a class="wuLink" href="https://www.wu.ac.at/" target="_blank"> </a>
+	</span>
 	<button
 		on:click={toggleBurgerBool}
 		name="Burger-Menü öffnen"
@@ -121,29 +127,29 @@
 		<a class="hyperLink" href="/sponsoring">Sponsoring</a>
 		<a class="hyperLink" href="/slides">Slides</a>
 		<a class="hyperLink" href="/blog">Blog</a>
-		<a class="hyperLink" href="htttps://www.automationofwork.at">2024</a>
+		<a class="hyperLink" href="https://www.automationofwork.at">2024</a>
 	</div>
 </header>
 <div class="burgerNavigation unselectable-text hide" bind:this={burgerMenu}>
 	<a class="burgerRow" href="/" on:click={toggleBurgerBool}
 		><span class="burgerHyperlink">Home</span></a
 	>
-	<a class="burgerRow" href="/programm" on:click={toggleBurgerBool}
+	<a class="burgerRow" href="/program" on:click={toggleBurgerBool}
 		><span class="burgerHyperlink">Program</span></a
 	>
-	<a class="burgerRow" href="/speaker" on:click={toggleBurgerBool}
+	<a class="burgerRow" href="/people" on:click={toggleBurgerBool}
 		><span class="burgerHyperlink">People</span></a
 	>
 	<a class="burgerRow" href="/sponsoring" on:click={toggleBurgerBool}
 		><span class="burgerHyperlink">Sponsoring</span></a
 	>
-	<a class="burgerRow" href="/unterlagen" on:click={toggleBurgerBool}
+	<a class="burgerRow" href="/slides" on:click={toggleBurgerBool}
 		><span class="burgerHyperlink">Slides</span></a
 	>
-	<a class="burgerRow" href="/unterlagen" on:click={toggleBurgerBool}
+	<a class="burgerRow" href="/blog" on:click={toggleBurgerBool}
 		><span class="burgerHyperlink">Blog</span></a
 	>
-	<a class="burgerRow" href="/unterlagen" on:click={toggleBurgerBool}
+	<a class="burgerRow" href="https://www.automationofwork.at" on:click={toggleBurgerBool}
 		><span class="burgerHyperlink">2024</span></a
 	>
 </div>
@@ -211,8 +217,25 @@
 	.logoContainer {
 		max-width: min(18rem, 65%);
 		margin: 1rem;
+		position: relative;
 	}
 	.logoContainer:hover {
 		transform: translateY(-0.125rem);
+	}
+	.kanzleiLink {
+		display: inline-block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 60%;
+		height: 100%;
+	}
+	.wuLink {
+		position: absolute;
+		display: inline-block;
+		right: 0;
+		top: 0;
+		width: 40%;
+		height: 100%;
 	}
 </style>

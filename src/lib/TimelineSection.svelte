@@ -14,8 +14,8 @@
 			<div class="eventTextContainer">
 				<div class="eventHeading">Begrüßung und Eröffnung</div>
 				<div class="eventSubtext">
-					<a href="/speaker#Auer-Mayer">Susanne Auer-Mayer<InternalLink /></a> und
-					<a href="/speaker#Tinhofer">Andreas Tinhofer<InternalLink /></a>
+					<a href="/people#Auer-Mayer">Susanne Auer-Mayer<InternalLink /></a> und
+					<a href="/people#Tinhofer">Andreas Tinhofer<InternalLink /></a>
 				</div>
 			</div>
 		</div>
@@ -29,7 +29,7 @@
 					Die Veränderung von Arbeit im Kontext generativer KI - Chancen und Herausforderungen
 				</div>
 				<div class="eventSubtext">
-					<a href="/speaker#Heitzinger">Clemens Heitzinger<InternalLink /></a>
+					<a href="/people#Köszegi">Sabine Köszegi<InternalLink /></a>
 				</div>
 			</div>
 		</div>
@@ -39,9 +39,9 @@
 				<ellipse cx="7.5" cy="7.5" rx="7.5" ry="7.5" fill="#62B5C0" />
 			</svg>
 			<div class="eventTextContainer">
-				<div class="eventHeading">Der Einsatz von KI-Systemen aus der Sicht des HR-Managements</div>
+				<div class="eventHeading">Die Bedeutung der KI-VO für die betriebliche Praxis</div>
 				<div class="eventSubtext">
-					<a href="/speaker#Reichel">Astrid Reichel<InternalLink /></a>
+					<a href="/people#Djeffal">Christian Djeffal<InternalLink /></a>
 				</div>
 			</div>
 		</div>
@@ -61,9 +61,9 @@
 				<ellipse cx="7.5" cy="7.5" rx="7.5" ry="7.5" fill="#62B5C0" />
 			</svg>
 			<div class="eventTextContainer">
-				<div class="eventHeading">Was bedeutet der AI Act für die Praxis?</div>
+				<div class="eventHeading">Status quo bei der Umsetzung der KI-VO in Österreich</div>
 				<div class="eventSubtext">
-					<a href="/speaker#Eisenberger">Iris Eisenberger<InternalLink /></a>
+					<a href="/people#Gorzala">Jeanette Gorzala<InternalLink /></a>
 				</div>
 			</div>
 		</div>
@@ -73,9 +73,9 @@
 				<ellipse cx="7.5" cy="7.5" rx="7.5" ry="7.5" fill="#62B5C0" />
 			</svg>
 			<div class="eventTextContainer">
-				<div class="eventHeading">Datenschutzrechtliche Fragen des KI-Einsatzes</div>
+				<div class="eventHeading">Datenschutzrechtliche Fragen des KI-Einsatzes im Betrieb</div>
 				<div class="eventSubtext">
-					<a href="/speaker#Warter">Johannes Warter<InternalLink /></a>
+					<a href="/people#Schmidl">Matthias Schmidl<InternalLink /></a>
 				</div>
 			</div>
 		</div>
@@ -95,9 +95,11 @@
 				<ellipse cx="7.5" cy="7.5" rx="7.5" ry="7.5" fill="#62B5C0" />
 			</svg>
 			<div class="eventTextContainer">
-				<div class="eventHeading">Algorithmische Diskriminierung</div>
+				<div class="eventHeading">
+					Urheberrechtliche Aspekte der Nutzung generativer KI im Betrieb
+				</div>
 				<div class="eventSubtext">
-					<a href="/speaker#Tinhofer">Andreas Tinhofer<InternalLink /></a>
+					<a href="/people#Homar">Philipp Homar<InternalLink /></a>
 				</div>
 			</div>
 		</div>
@@ -108,10 +110,10 @@
 			</svg>
 			<div class="eventTextContainer">
 				<div class="eventHeading">
-					Mitwirkung der Belegschaft bei der Einführung von KI-Systemen
+					Arbeitsrechtliche Aspekte der Nutzung generativer KI im Betrieb
 				</div>
 				<div class="eventSubtext">
-					<a href="/speaker#Greiner">Conrad Greiner<InternalLink /></a>
+					<a href="/people#Auer-Mayer">Susanne Auer-Mayer<InternalLink /></a>
 				</div>
 			</div>
 		</div>
@@ -131,29 +133,23 @@
 				<ellipse cx="7.5" cy="7.5" rx="7.5" ry="7.5" fill="#62B5C0" />
 			</svg>
 			<div class="eventTextContainer">
-				<div class="eventHeading">Einsatz von KI-Systemen in der Praxis</div>
+				<div class="eventHeading">Praxisbeispiele zum Einsatz generativer KI im Betrieb</div>
 				<div class="eventSubtext">
-					<a href="/speaker#Angerler">Eva Angerler<InternalLink /></a>,
-					<a href="/speaker#Leimüller">Gertraud Leimüller<InternalLink /></a>
-					und <a href="/speaker#Mader">Thomas Mader<InternalLink /></a>
+					<a href="/people#Dorner">Verena Dorner<InternalLink /></a>,
+					<a href="/people#Katzlberger">Michael Katzlberger<InternalLink /></a>
+					und <a href="/people#Fuchs">Monika Fuchs<InternalLink /></a>
 				</div>
 			</div>
 		</div>
 		<div class="eventContainer">
-			<div class="eventTime">16:00</div>
+			<div class="eventTime">17:00</div>
 			<svg class="eventDotSvg" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<ellipse cx="7.5" cy="7.5" rx="7.5" ry="7.5" fill="#62B5C0" />
 			</svg>
 			<div class="eventTextContainer">
-				<div class="eventHeading">
-					Handlungsfelder für einen KI-Einsatz zum Nutzen der Beschäftigten und des Betriebes
-					(Podiumsdiskussion)
-				</div>
+				<div class="eventHeading">Zusammenfassung und Schlusswort</div>
 				<div class="eventSubtext">
-					<a href="/speaker#Gogola">Michael Gogola<InternalLink /></a>,
-					<a href="/speaker#Ludwig">Emanuel Ludwig<InternalLink /></a>,
-					<a href="/speaker#Ritzberger-Moser">Anna Ritzberger-Moser<InternalLink /></a> und
-					<a href="/speaker#Sommer">Roland Sommer<InternalLink /></a>
+					<a href="/people#Kietaibl">Christoph Kietaibl<InternalLink /></a>
 				</div>
 			</div>
 		</div>

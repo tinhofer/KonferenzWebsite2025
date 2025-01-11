@@ -10,14 +10,21 @@
 				rechtlichen Rahmenbedingungen gibt es bereits und welche Regularien kommen noch auf uns zu?
 			</div>
 		</div>
-		<div class="quoteWrapper">
-			<div class="text">
-				<p>
-					Hier kommt dann ein toller Marketing Spruch rein! Mit dem man viele zum Stauenen bringen
-					kann
-				</p>
-			</div>
-		</div>
+		<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+			<!-- Circle -->
+			<circle cx="50" cy="50" r="50" stroke-width="2" fill="#62b5c0" />
+
+			<!-- Text in three lines -->
+			<text x="50" y="35" text-anchor="middle" font-size="9" dominant-baseline="middle">
+				Ab 2.2.2025
+			</text>
+			<text x="50" y="50" text-anchor="middle" font-size="9" dominant-baseline="middle">
+				ist KI-Kompetenz
+			</text>
+			<text x="50" y="65" text-anchor="middle" font-size="9" dominant-baseline="middle">
+				verpflichtend!
+			</text>
+		</svg>
 	</div>
 </div>
 
@@ -56,83 +63,23 @@
 	}
 	.introHeading {
 		align-self: flex-start;
-		margin-left: auto;
 	}
 	.introContent {
+		margin-top: var(--midGap);
 		align-self: flex-end;
 	}
-
-	.quoteWrapper {
+	svg {
+		border: none;
+		fill: var(--white);
+		width: max(33%, 12rem);
 		flex-shrink: 0;
-		aspect-ratio: 1/1;
-		width: 33%;
-		position: relative;
 	}
-
-	.text {
-		width: 100%;
-		height: 100%;
-		/*BLUE BG*/
-		background: radial-gradient(
-			ellipse at center,
-			var(--cyan-light) 0%,
-			var(--cyan) 70%,
-			rgba(255, 6, 6, 0) 70.3%
-		);
-		position: relative;
-		margin: 0;
-		color: white;
-		text-align: center;
-	}
-
-	.text p {
-		font-size: var(--fs-p);
-		height: 100%;
-		line-height: 1.25;
-		padding: 0;
-		text-align: center;
-		font-style: italic;
-	}
-
-	.text::before {
-		content: '';
-		width: 50%;
-		height: 100%;
-		float: left;
-		shape-outside: polygon(
-			0 0,
-			98% 0,
-			50% 6%,
-			23.4% 17.3%,
-			6% 32.6%,
-			0 50%,
-			6% 65.6%,
-			23.4% 82.7%,
-			50% 94%,
-			98% 100%,
-			0 100%
-		);
-		shape-margin: 7%;
-	}
-
-	.text p::before {
-		content: '';
-		width: 50%;
-		height: 100%;
-		float: right;
-		shape-outside: polygon(
-			2% 0%,
-			100% 0%,
-			100% 100%,
-			2% 100%,
-			50% 94%,
-			76.6% 82.7%,
-			94% 65.6%,
-			100% 50%,
-			94% 32.6%,
-			76.6% 17.3%,
-			50% 6%
-		);
-		shape-margin: 7%;
+	@media (max-width: 45rem) {
+		.introContainer {
+			flex-direction: column;
+		}
+		svg {
+			width: min(80%, 25rem);
+		}
 	}
 </style>
