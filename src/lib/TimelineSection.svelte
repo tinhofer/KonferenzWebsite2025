@@ -131,11 +131,33 @@
 				<ellipse cx="7.5" cy="7.5" rx="7.5" ry="7.5" fill="#62B5C0" />
 			</svg>
 			<div class="eventTextContainer">
-				<div class="eventHeading">Praxisbeispiele zum Einsatz generativer KI im Betrieb</div>
+				<div class="eventHeading">Hidden Costs of Algorithmic Management</div>
 				<div class="eventSubtext">
-					<a href="/people#Dorner">Verena Dorner<InternalLink /></a>,
+					<a href="/people#Dorner">Verena Dorner<InternalLink /></a>
+				</div>
+			</div>
+		</div>
+		<div class="eventContainer">
+			<div class="eventTime">15:45</div>
+			<svg class="eventDotSvg" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<ellipse cx="7.5" cy="7.5" rx="7.5" ry="7.5" fill="#62B5C0" />
+			</svg>
+			<div class="eventTextContainer">
+				<div class="eventHeading">Die Lernweise von generativer KI in der Praxis</div>
+				<div class="eventSubtext">
 					<a href="/people#Katzlberger">Michael Katzlberger<InternalLink /></a>
-					und <a href="/people#Fuchs">Monika Fuchs<InternalLink /></a>
+				</div>
+			</div>
+		</div>
+		<div class="eventContainer">
+			<div class="eventTime">16:15</div>
+			<svg class="eventDotSvg" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<ellipse cx="7.5" cy="7.5" rx="7.5" ry="7.5" fill="#62B5C0" />
+			</svg>
+			<div class="eventTextContainer">
+				<div class="eventHeading">Anwendungsmöglichkeiten von generativer KI im HR-Management</div>
+				<div class="eventSubtext">
+					<a href="/people#Fuchs">Monika Fuchs<InternalLink /></a>
 				</div>
 			</div>
 		</div>

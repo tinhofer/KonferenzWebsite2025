@@ -132,7 +132,7 @@
 		</div>
 		<div class="sprecherContainer" id="Homar">
 			<div class="textContainer">
-				<h1>Philipp Homar</h1>
+				<h1>Univ.-Prof. Dr. Philipp Homar</h1>
 				<p>
 					ist Professor für Immaterialgüterrecht an der JKU Linz und an der WU Wien. Seine
 					Forschungsinteressen liegen im Immaterialgüterrecht und in angrenzenden Rechtsbereichen.
@@ -151,12 +151,11 @@
 			<div class="textContainer">
 				<h1>Michael Katzlberger</h1>
 				<p>
-					Gründer der KI-Kreativagentur
-					<a href="https://www.3LIOT.ai" target="_blank">3LIOT.ai<ExternalLink /></a>
-					, beschäftigt sich seit 2016 intensiv mit den Möglichkeiten der Künstlichen Intelligenz in
-					der Kreativwirtschaft und vermittelt sein Wissen in Workshops, Lehrveranstaltungen und Vorträgen
-					im In- und Ausland. Sein Schwerpunkt liegt hierbei darauf, das Thema KI zu entmystifizieren,
-					um es EPUs, KMUs und der breiteren Öffentlichkeit besser zugänglich zu machen.
+					Gründer der KI-Kreativagentur 3LIOT.ai, beschäftigt sich seit 2016 intensiv mit den
+					Möglichkeiten der Künstlichen Intelligenz in der Kreativwirtschaft und vermittelt sein
+					Wissen in Workshops, Lehrveranstaltungen und Vorträgen im In- und Ausland. Sein
+					Schwerpunkt liegt hierbei darauf, das Thema KI zu entmystifizieren, um es EPUs, KMUs und
+					der breiteren Öffentlichkeit besser zugänglich zu machen.
 				</p>
 			</div>
 			<picture>
@@ -194,7 +193,7 @@
 		</div>
 		<div class="sprecherContainer" id="Köszegi">
 			<div class="textContainer">
-				<h1>Sabine T. Köszegi</h1>
+				<h1>Univ.-Prof. Dr. Sabine T. Köszegi</h1>
 				<p>
 					ist Professorin für Arbeitswissenschaft und Organisation am Institut für
 					Managementwissenschaften der TU Wien. Ihre Forschung liegt an der Schnittstelle von
@@ -251,10 +250,10 @@
 			<div class="textContainer">
 				<h1>Dr. Andreas Tinhofer, LL.M.</h1>
 				<p>
-					ist Rechtsanwalt in Wien und Lektor an der FH des BFI Wien. Er berät seit über 20 Jahren
-					Unternehmen und Führungskräfte in allen arbeitsrechtlichen Angelegenheiten, einschließlich
-					Arbeitnehmerdatenschutz. Sein besonderes Interesse gilt dem Einsatz von KI in der
-					Arbeitswelt.
+					ist Rechtsanwalt in Wien und Lektor an der Universität Wien und der FH des BFI Wien. Er
+					berät seit über 20 Jahren Unternehmen und Führungskräfte in allen arbeitsrechtlichen
+					Angelegenheiten, einschließlich Arbeitnehmerdatenschutz. Sein besonderes Interesse gilt
+					dem Einsatz von KI in der Arbeitswelt.
 				</p>
 			</div>
 		</div>
@@ -266,25 +265,21 @@
 		width: 100%;
 		background-color: var(--white-dark);
 		min-height: var(--min-height-sub);
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
 	}
 	.inlineContainer {
 		box-sizing: border-box; /* Ensure padding doesn't cause overflow */
 		padding: var(--largerGap);
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+		display: flex;
+		flex-wrap: wrap;
 		max-width: 1600px;
-		gap: 2rem;
-		width: 100%;
+		gap: 1rem;
+		margin: auto;
 	}
 	.sprecherContainer {
 		display: flex;
 		flex-direction: column;
 		background-color: white;
-		width: calc(100% - 2rem);
+		width: calc((100% / 3) - 3rem);
 		padding: 1rem;
 	}
 	img {
@@ -295,11 +290,28 @@
 	.textContainer {
 		order: 2;
 	}
+	@media (max-width: 900px) {
+		.sprecherContainer {
+			width: calc((96% / 2) - 2rem);
+		}
+	}
 	@media (max-width: 480px) {
+		.sprecherContainer {
+			width: 100%;
+			margin: auto;
+		}
 		.inlineContainer {
-			display: flex;
-			flex-direction: column;
-			padding: 0;
+			padding: 2rem;
+			gap: 1rem;
+		}
+	}
+	@media (max-width: 350px) {
+		.sprecherContainer {
+			width: 100%;
+			margin: auto;
+		}
+		.inlineContainer {
+			padding: 0rem;
 			gap: 0rem;
 		}
 	}

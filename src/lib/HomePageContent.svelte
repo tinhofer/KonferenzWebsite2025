@@ -6,4 +6,4 @@
 
 <HomeIntro />
 <HomeInfo />
-<HomeBlog />
+<!-- <HomeBlog /> -->

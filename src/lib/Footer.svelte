@@ -13,7 +13,6 @@
 		align-items: center;
 		justify-content: space-evenly;
 		position: relative;
-		width: 100%;
 		min-height: var(--bigGap); /* 100px / 16px */
 		background: var(--cyan);
 		color: var(--white-dark);

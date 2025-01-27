@@ -122,20 +122,19 @@
 
 	<div class="navBar headerContentsContainer" bind:this={navBar}>
 		<a class="hyperLink" href="/">Home</a>
-		<a class="hyperLink" href="/program">Program</a>
+		<a class="hyperLink" href="/programm">Programm</a>
 		<a class="hyperLink" href="/people">People</a>
 		<a class="hyperLink" href="/sponsoring">Sponsoring</a>
 		<a class="hyperLink" href="/slides">Slides</a>
-		<a class="hyperLink" href="/blog">Blog</a>
-		<a class="hyperLink" href="https://www.automationofwork.at">2024</a>
+		<!-- <a class="hyperLink" href="/blog">Blog</a> -->
 	</div>
 </header>
 <div class="burgerNavigation unselectable-text hide" bind:this={burgerMenu}>
 	<a class="burgerRow" href="/" on:click={toggleBurgerBool}
 		><span class="burgerHyperlink">Home</span></a
 	>
-	<a class="burgerRow" href="/program" on:click={toggleBurgerBool}
-		><span class="burgerHyperlink">Program</span></a
+	<a class="burgerRow" href="/programm" on:click={toggleBurgerBool}
+		><span class="burgerHyperlink">Programm</span></a
 	>
 	<a class="burgerRow" href="/people" on:click={toggleBurgerBool}
 		><span class="burgerHyperlink">People</span></a
@@ -146,12 +145,9 @@
 	<a class="burgerRow" href="/slides" on:click={toggleBurgerBool}
 		><span class="burgerHyperlink">Slides</span></a
 	>
-	<a class="burgerRow" href="/blog" on:click={toggleBurgerBool}
+	<!-- <a class="burgerRow" href="/blog" on:click={toggleBurgerBool}
 		><span class="burgerHyperlink">Blog</span></a
-	>
-	<a class="burgerRow" href="https://www.automationofwork.at" on:click={toggleBurgerBool}
-		><span class="burgerHyperlink">2024</span></a
-	>
+	> -->
 </div>
 
 <style>

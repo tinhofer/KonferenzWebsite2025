@@ -1,7 +1,7 @@
 <script>
 	import SubPageLayout from '$lib/SubPageLayout.svelte';
 	import TimelineSection from '$lib/TimelineSection.svelte';
-	const heading = 'Program';
+	const heading = 'Programm';
 </script>
 
 <svelte:head>

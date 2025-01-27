@@ -1,12 +1,13 @@
 <div class="info">
 	<div class="infoContainer">
 		<div class="rightInfo">
-			29.02.2024 | 09:00 - 17:00 Uhr<br />Campus WU | Gebäude LC, Clubraum LC.2.400<br />Institut
-			für Arbeits- und Sozialrecht, WU<br />T: 01/313 36 – 4637<br />E:
-			arbeitsrecht.sozialrecht@wu.ac.at
+			10.03.2025 | 09:00 - 17:00 Uhr<br />
+			Campus WU | Gebäude LC, Festsaal 2<br />
+			T: 01/313 36 – 4637<br />
+			E: arbeitsrecht.sozialrecht@wu.ac.at
 		</div>
 		<a
-			href="mailto:arbeitsrecht.sozialrecht@wu.ac.at?subject=Anmeldung zur Tagung „Automatisierung der Arbeit“ an der WU am 29.02.2024&amp;body=Hiermit melde ich mich zur o.g. kostenlosen Tagung am 29.02.2024 an. Ich nehme zur Kenntnis, dass die Teilnehmerzahl aus Platzgründen begrenzt ist. Sollte ich an der Teilnahme verhindert sein, so werde ich mich per E-Mail abmelden, um anderen Interessenten die Teilnahme zu ermöglichen.%0D%0A%0D%0AName: %0D%0A%0D%0AFirma/Organisation: %0D%0A%0D%0A Hinweis: Wir weisen darauf hin, dass bei der Veranstaltung fotografiert wird und diese Fotos für Veranstaltungsberichte im Internet oder in anderen Medien verwendet werden könnten. Sollten Sie damit nicht einverstanden sein, so teilen Sie dies bitte den Organisatoren vor Ort mit."
+			href="mailto:arbeitsrecht.sozialrecht@wu.ac.at?subject=Anmeldung zur Fachtagung „Automatisierung der Arbeit“ an der WU am 10.03.2025&amp;body=Hiermit melde ich mich zur o.g. kostenlosen Tagung am 10.03.2025 an. Ich nehme zur Kenntnis, dass die Teilnehmerzahl aus Platzgründen begrenzt ist. Sollte ich an der Teilnahme verhindert sein, so werde ich mich per E-Mail abmelden, um anderen Interessenten die Teilnahme zu ermöglichen.%0D%0A%0D%0AName: %0D%0A%0D%0AFirma/Organisation: %0D%0A%0D%0A Hinweis: Wir weisen darauf hin, dass bei der Veranstaltung fotografiert wird und diese Fotos für Veranstaltungsberichte im Internet oder in anderen Medien verwendet werden könnten. Sollten Sie damit nicht einverstanden sein, so teilen Sie dies bitte den Organisatoren vor Ort mit."
 			target="_blank"
 			class="button buttonAnmeldung">Anmelden</a
 		>

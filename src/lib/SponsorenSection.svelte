@@ -2,6 +2,7 @@
 	import AKWienSvg from '$lib/images/Logo_AK Wien.svg';
 	import FacultasSvg from '$lib/images/Logo_Facultas.svg';
 	import LexisNexisSvg from '$lib/images/Logo_LexisNexis.svg';
+	import ATTYSPng from '$lib/images/Logo_ATTYS.png';
 	import ManzSvg from '$lib/images/Logo_Manz.svg';
 	import WKOSvg from '$lib/images/Logo_WKO.svg';
 	import LittlerSvg from '$lib/images/Logo_Littler.svg';
@@ -26,6 +27,10 @@
 
 <div class="outerContainer">
 	<div class="inlineContainer">
+		<button class="sponsorContainer" on:click={openText} id="at">
+			<img src={ATTYSPng} alt="Logo der Kanzlei ATTYS" />
+			<p class="hide"></p>
+		</button>
 		<button class="sponsorContainer" on:click={openText} id="fa">
 			<img src={FacultasSvg} alt="Logo des Verlages Facultas" />
 			<p class="hide">
@@ -102,6 +107,24 @@
 </div>
 
 <style>
+	#ma {
+		order: 5;
+	}
+	#wk {
+		order: 6;
+	}
+	#kr {
+		order: 3;
+	}
+	#li {
+		order: 4;
+	}
+	#fa {
+		order: 2;
+	}
+	#at {
+		order: 1;
+	}
 	.hide {
 		display: none;
 	}
@@ -136,6 +159,24 @@
 		.sponsorContainer {
 			max-width: calc(50% - 0.5rem);
 		}
+		#ma {
+			order: 1 !important;
+		}
+		#wk {
+			order: 2 !important;
+		}
+		#kr {
+			order: 6 !important;
+		}
+		#li {
+			order: 3 !important;
+		}
+		#fa {
+			order: 5 !important;
+		}
+		#at {
+			order: 4 !important;
+		}
 	}
 	@media (min-width: 90rem) {
 		.inlineContainer {
@@ -146,19 +187,22 @@
 			padding: 2rem;
 		}
 		#ma {
-			order: 1;
+			order: 1 !important;
 		}
 		#wk {
-			order: 2;
+			order: 2 !important;
 		}
 		#kr {
-			order: 3;
+			order: 3 !important;
 		}
 		#li {
-			order: 5;
+			order: 5 !important;
 		}
 		#fa {
-			order: 4;
+			order: 4 !important;
+		}
+		#at {
+			order: 6 !important;
 		}
 	}
 	img {
