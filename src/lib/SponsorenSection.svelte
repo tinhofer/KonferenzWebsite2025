@@ -1,6 +1,6 @@
 <script>
 	import AKWienSvg from '$lib/images/Logo_AK Wien.svg';
-	import FacultasSvg from '$lib/images/Logo_Facultas.svg';
+	import FacultasSvg from '$lib/images/Logo_Facultas.jpg';
 	import LexisNexisSvg from '$lib/images/Logo_LexisNexis.svg';
 	import ATTYSPng from '$lib/images/Logo_ATTYS.png';
 	import ManzSvg from '$lib/images/Logo_Manz.svg';
@@ -29,7 +29,7 @@
 	<div class="inlineContainer">
 		<button class="sponsorContainer" on:click={openText} id="at">
 			<img src={ATTYSPng} alt="Logo der Kanzlei ATTYS" />
-			<p class="hide"></p>
+			<p class="hide">ATTYS berät Unternehmen als Rechtsanwaltskanzlei zu wirtschaftsrechtlichen Fragen – dies zuletzt schwerpunktmäßig im Bereich der künstlichen Intelligenz, neuer Arbeitsformen und des Geschäfts- und Geheimnisschutzes. Dabei legen wir großen Wert auf klare, zielgerichtete und wirtschaftlich orientierte Beratung.</p>
 		</button>
 		<button class="sponsorContainer" on:click={openText} id="fa">
 			<img src={FacultasSvg} alt="Logo des Verlages Facultas" />
@@ -196,13 +196,13 @@
 			order: 3 !important;
 		}
 		#li {
-			order: 5 !important;
-		}
-		#fa {
 			order: 4 !important;
 		}
-		#at {
+		#fa {
 			order: 6 !important;
+		}
+		#at {
+			order: 5 !important;
 		}
 	}
 	img {

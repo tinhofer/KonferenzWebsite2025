@@ -40,6 +40,10 @@
 	import HeroSection from '$lib/HeroSection.svelte';
 	import HomePageContent from '$lib/HomePageContent.svelte';
 </script>
+<svelte:head>
+	<title>Fachtagung Automatisierung der Arbeit</title>
+	<meta name="description" content='2. Fachtagung zum Thema Automatisierung der Arbeit am 10.3.2025 ' />
+</svelte:head>
 
 <HeroSection />
 <HomePageContent />

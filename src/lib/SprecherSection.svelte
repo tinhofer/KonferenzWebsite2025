@@ -11,6 +11,9 @@
 	import FuchsAvif from '$lib/images/people/Fuchs.avif';
 	import FuchsWebp from '$lib/images/people/Fuchs.webp';
 	import FuchsJpg from '$lib/images/people/Fuchs.jpg';
+	import GorzalaAvif from '$lib/images/people/Gorzala.avif';
+	import GorzalaWebp from '$lib/images/people/Gorzala.webp';
+	import GorzalaJpg from '$lib/images/people/Gorzala.jpg';
 	import HomerAvif from '$lib/images/people/Homer.avif';
 	import HomerWebp from '$lib/images/people/Homer.webp';
 	import HomerJpg from '$lib/images/people/Homer.jpg';
@@ -125,6 +128,24 @@
 				<img
 					src={FuchsJpg}
 					alt="Portrait von Mag. (FH) Monika Fuchs MSc."
+					loading="lazy"
+					decoding="async"
+				/>
+			</picture>
+		</div>
+		<div class="sprecherContainer" id="Gorzala">
+			<div class="textContainer">
+				<h1>Dr. Jeannette Gorzala, BSc</h1>
+				<p>
+					ist eine führende Expertin für KI-Governance, KI-Regulierung und KI-Strategie. Als Gründerin von ACT AI NOW  (www.actainow.com) berät sie Organisationen zu allen Fragen des Technologie- und Wirtschaftsrechts, insbesondere bei der Umsetzung des EU AI Acts. Sie ist eine gefragte Speakerin auf internationalen Konferenzen und eine zentrale Stimme in der europäischen KI-Debatte. Darüber hinaus dient sie dem österreichischen KI-Ökosystem als stellvertretende Vorsitzende des KI-Beirats der Bundesregierung, im KI-Expertengremium der Stadt Wien sowie bei AI Austria.
+				</p>
+			</div>
+			<picture>
+				<source srcset={GorzalaAvif} type="image/avif" />
+				<source srcset={GorzalaWebp} type="image/webp" />
+				<img
+					src={GorzalaJpg}
+					alt="Portrait von Jeannette Gorzala"
 					loading="lazy"
 					decoding="async"
 				/>
