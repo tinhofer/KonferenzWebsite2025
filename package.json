@@ -39,6 +39,6 @@
 	"type": "module",
 	"dependencies": {
 		"gsap": "^3.12.5",
-		"pnpm": "^9.15.4"
+		"pnpm": "^9.15.6"
 	}
 }
