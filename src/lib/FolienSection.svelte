@@ -1,5 +1,9 @@
 <script>
 	import InternalLink from './InternalLink.svelte';
+	import SlideKatzlberger from '$lib/slides/Katzlberger.pdf';
+	import SlideHomar from '$lib/slides/Homar.pdf';
+	import SlideAuerMayer from '$lib/slides/Auer-Mayer.pdf';
+	import SlideSchmidl from '$lib/slides/Schmidl.pdf';
 	var authanticated = false;
 	/**
 	 * @type {string}
@@ -20,7 +24,8 @@
 	}
 	function checkPsw() {
 		var hashedPsw = simpleHash(psw);
-		if (hashedPsw == 103055) {
+		console.log(hashedPsw);
+		if (hashedPsw == 538178232) {
 			authanticated = true;
 		} else {
 			alert('Das angegebene Passwort ist leider falsch.');
@@ -28,10 +33,6 @@
 		}
 	}
 
-	// Example usage
-	const myString = 'Hello, world!';
-	const hash = simpleHash(myString);
-	console.log(hash);
 </script>
 
 <div class="bg">
@@ -40,15 +41,10 @@
 			<div class="presentationContainer">
 				<h2>Downloadlinks zu den Folien:</h2>
 				<ul>
-					<li><a href="/download.pdf" target="_blank">Folien_Tinhofer.pdf<InternalLink /></a></li>
-					<li><a href="/download.pdf" target="_blank">Folien_Reichel.pdf<InternalLink /></a></li>
-					<li><a href="/download.pdf" target="_blank">Folien_Greiner.pdf<InternalLink /></a></li>
-					<li><a href="/download.pdf" target="_blank">Folien_Warter.pdf<InternalLink /></a></li>
-					<li><a href="/download.pdf" target="_blank">Folien_Heitzinger.pdf<InternalLink /></a></li>
-					<li><a href="/download.pdf" target="_blank">Folien_Auer-Mayer.pdf<InternalLink /></a></li>
-					<li>
-						<a href="/download.pdf" target="_blank">Folien_Eisenberger.pdf<InternalLink /></a>
-					</li>
+					<li><a href="{SlideSchmidl}" target="_blank">Folien_Schmidl.pdf<InternalLink /></a></li>
+					<li><a href="{SlideAuerMayer}" target="_blank">Folien_Auer-Mayer.pdf<InternalLink /></a></li>
+					<li><a href="{SlideHomar}" target="_blank">Folien_Homar.pdf<InternalLink /></a></li>
+					<li><a href="{SlideKatzlberger}" target="_blank">Folien_Katzlberger.pdf<InternalLink /></a></li>
 				</ul>
 			</div>
 		</div>

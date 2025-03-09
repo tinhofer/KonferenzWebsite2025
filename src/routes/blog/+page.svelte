@@ -4,12 +4,28 @@
 	import thumbnail1 from '$lib/images/blog1.webp';
 	import thumbnail2 from '$lib/images/blog2.png';
 	import thumbnail3 from '$lib/images/blog3.webp';
+	import thumbnail4 from '$lib/images/blog4.webp';
 	let heading = 'Blog';
 </script>
 
 <SubPageLayout Heading={heading}>
 	<div class="blogBackground">
 		<div class="blogContainer">
+			<div class="item i4">
+				<img src={thumbnail4} alt="flying robot" />
+				<div class="textarea">
+					<div class="content">
+						<div class="heading">Ohne KI zum KI-Job</div>
+						<div class="descripiton">
+							<p>Anthropic fordert authentische Bewerbungen</p>
+							<!-- 31.01.2025 -->
+						</div>
+					</div>
+					<div class="link">
+						<a class="link" href="/blog/004">Hier weiterlesen<InternalLink/></a>					
+					</div>
+				</div>
+			</div>
 			<div class="item i3">
 				<img src={thumbnail3} alt="flying robot" />
 				<div class="textarea">
@@ -95,7 +111,7 @@
 	.blogContainer {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, 400px);
-		max-width: 1600px;
+		max-width: 1500px;
 		gap: 30px;
 		justify-content: center;
 		margin: auto;
