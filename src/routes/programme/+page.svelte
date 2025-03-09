@@ -1,11 +1,11 @@
 <script>
 	import SubPageLayout from '$lib/SubPageLayout.svelte';
 	import TimelineSection from '$lib/TimelineSection.svelte';
-	const heading = 'Programm';
+	const heading = 'Programme';
 </script>
 
 <svelte:head>
-	<title>Tagung "Automatisierung der Arbeit": Programm</title>
+	<title>Tagung "Automatisierung der Arbeit": Programme</title>
 	<meta
 		name="description"
 		content="Hier findet man das Programm für die Tagung Automatisierung der Arbeit, in der Experten zu den Risiken und Chancen des Einsatzes von Künstlicher Intelligenz auf der Arbeitswelt sprechen."
