@@ -1,9 +1,13 @@
 <script>
 	import InternalLink from './InternalLink.svelte';
-	import SlideKatzlberger from '$lib/slides/Katzlberger.pdf';
-	import SlideHomar from '$lib/slides/Homar.pdf';
-	import SlideAuerMayer from '$lib/slides/Auer-Mayer.pdf';
-	import SlideSchmidl from '$lib/slides/Schmidl.pdf';
+	import SlideKatzlberger from '$lib/slides/Präsentation_Katzlberger.pdf';6
+	import SlideHomar from '$lib/slides/Präsentation_Homar.pdf';5
+	import SlideAuerMayer from '$lib/slides/Präsentation_Auer-Mayer.pdf';1
+	import SlideSchmidl from '$lib/slides/Präsentation_Schmidl.pdf';8
+	import SlideKöszegi from '$lib/slides/Präsentation_Köszegi.pdf';7
+	import SlideDjeffal from '$lib/slides/Präsentation_Djeffal.pdf';2
+	import SlideDorner from '$lib/slides/Präsentation_Dorner.pdf';3
+	import SlideFuchs from '$lib/slides/Präsentation_Fuchs.pdf';4
 	var authanticated = false;
 	/**
 	 * @type {string}
@@ -37,25 +41,26 @@
 
 <div class="bg">
 	{#if authanticated}
-		<div class="inlineContainer">
 			<div class="presentationContainer">
-				<h2>Downloadlinks zu den Folien:</h2>
+				<h2>Präsentationen:</h2>
 				<ul>
-					<li><a href="{SlideSchmidl}" target="_blank">Folien_Schmidl.pdf<InternalLink /></a></li>
-					<li><a href="{SlideAuerMayer}" target="_blank">Folien_Auer-Mayer.pdf<InternalLink /></a></li>
-					<li><a href="{SlideHomar}" target="_blank">Folien_Homar.pdf<InternalLink /></a></li>
-					<li><a href="{SlideKatzlberger}" target="_blank">Folien_Katzlberger.pdf<InternalLink /></a></li>
+					<li><a href="{SlideAuerMayer}" target="_blank">Präsentation_Auer-Mayer.pdf<InternalLink /></a></li>
+					<li><a href="{SlideDjeffal}" target="_blank">Präsentation_Djeffal<InternalLink /></a></li>
+					<li><a href="{SlideDorner}" target="_blank">Präsentation_Dorner.pdf<InternalLink /></a></li>
+					<li><a href="{SlideFuchs}" target="_blank">Präsentation_Fuchs.pdf<InternalLink /></a></li>
+					<li><a href="{SlideHomar}" target="_blank">Präsentation_Homar.pdf<InternalLink /></a></li>
+					<li><a href="{SlideKatzlberger}" target="_blank">Präsentation_Katzlberger.pdf<InternalLink /></a></li>
+					<li><a href="{SlideKöszegi}" target="_blank">Präsentation_Köszegi.pdf<InternalLink /></a></li>
+					<li><a href="{SlideSchmidl}" target="_blank">Präsentation_Schmidl.pdf<InternalLink /></a></li>
 				</ul>
 			</div>
-		</div>
 	{:else}
-		<div class="inlineContainer">
+
 			<div class="presentationContainer">
 				<p>Bitte geben sie das Passwort ein, um Zugriff auf die Unterlagen zu bekommen.</p>
 				<input bind:value={psw} placeholder="password" />
 				<button on:click={checkPsw}>enter</button>
 			</div>
-		</div>
 	{/if}
 </div>
 
@@ -70,17 +75,11 @@
 		justify-content: center;
 		color: var(--cyan);
 	}
-	.inlineContainer {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		gap: 1rem;
-		margin-bottom: 1rem;
-	}
 	.presentationContainer {
 		background-color: white;
 		padding: 3rem;
-		width: 100%;
+		width: calc(100% - 2rem);
+		max-width: 60ch;
 		height: fit-content;
 		border: 0;
 		z-index: 2;
