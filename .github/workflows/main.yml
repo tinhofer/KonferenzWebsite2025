@@ -17,4 +17,5 @@ jobs:
           server: e150555-ftp.services.easyname.eu  # Your FTP server
           username: ${{ secrets.FTP_USERNAME }}  # Set in your repo secrets
           password: ${{ secrets.FTP_PASSWORD }}  # Set in your repo secrets
-          server-dir: /webroot/  # The target directory on your FTP server
+          server-dir: /webroot/konferenz_website/  # The target directory on your FTP server
+          dangerous-clean-slate: true  # Delete all files on server before uploading
