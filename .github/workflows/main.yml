@@ -1,0 +1,20 @@
+name: FTP Deploy
+on:
+  push:
+    branches:
+      - gh-pages
+  workflow_dispatch:
+jobs:
+  ftp-deploy:
+      runs-on: ubuntu-latest
+      steps:
+      - uses: actions/checkout@v2
+        with: 
+          ref: gh-pages
+      - name: FTP-Deploy-Action
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: e150555-ftp.services.easyname.eu  # Your FTP server
+          username: ${{ secrets.FTP_USERNAME }}  # Set in your repo secrets
+          password: ${{ secrets.FTP_PASSWORD }}  # Set in your repo secrets
+          server-dir: /html/webroot/konferenz_website/  # The target directory on your FTP server
